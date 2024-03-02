@@ -1,0 +1,148 @@
+.imgt{
+    min-width: 100%;
+    margin-top: 95px;
+}
+.h31 h3{
+    background-color: #f1c40f;
+    color: #c0392b;
+    font-weight: bold;
+    border-bottom: 5px solid #f1c40f;
+    margin-bottom: 0px;
+}
+.brand img{
+    width: 90%;
+}
+
+/* Sản phẩm nổi bật */
+.product-top img{
+    width: 100%;   
+}
+.product-top img:hover{
+    box-shadow : 1px 1px 10px;
+    -moz-transform: scale(1.01);
+    -o-transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+    transform: scale(1.01);
+    -moz-transition: 1s ease;
+    -o-transition: 1s ease;
+    -webkit-transition: 1s ease;
+    transition: 1s ease;
+}
+.product-bottom .far, .product-bottom .fas{
+    color: #28a745;
+    font-size: 10px;
+}
+.product-bottom h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+.product-bottom h5{
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+.overlay{
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 7%;
+    margin-left: 0;
+    width: 70px;
+}
+.overlay .btn i{
+    border-radius: 50%;
+}
+.product-top:hover .overlay{
+    opacity: 1;
+    margin-left: 5%;
+    transition: 0.1s;
+}
+.overlay .fas, .overlay .far{
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+    height: 35px;
+    width: 35px;
+    font-size: 20px;
+    padding: 7px;
+    margin: 5%;
+    margin-bottom: 5%;
+}
+.overlay .btn-secondary{
+    background: transparent!important;
+    border: none!important;
+    box-shadow: none!important;
+}
+/* Nhận xét của khách hàng */
+.Cmt img{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-bottom: 120px;
+}
+.hashtag h4{
+    font-size: 20px;
+    color: #fff;
+}
+.hashtag a{
+    font-size: 20px;
+    color: rgb(0, 146, 250);
+}
+.special p{
+    font-size: 20px;
+}
+.special p i{
+    font-size: 24px;
+}
+
+@media only screen and (max-width:576px){
+    .spnoibat h1{
+        font-size: 24px;
+    }
+    
+    .Cmt h5{
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    .Cmt p{
+        font-size: 9px;
+        
+    }
+    .special p{
+        display: none;
+    }
+    .overlay{
+        display: block;
+        opacity: 0;
+        position: absolute;
+        top: 1%;
+        margin-left: 0;
+        width: 30px;
+        font-size: 30px;
+    }
+}
+@media only screen and (min-width:576px){
+    .spnoibat hr{
+        width: 20%;
+    }
+    
+}
+@media only screen and (max-width:375px){
+    .overlay{
+        display: block;
+        opacity: 0;
+        position: absolute;
+        width: 16px;
+        font-size:16px;
+        margin-top: -5px;
+        margin-bottom: 5px;
+    }
+    
+}
+.slider .col-12{
+    padding-top: 10px;
+    margin-top: 5px;
+}
