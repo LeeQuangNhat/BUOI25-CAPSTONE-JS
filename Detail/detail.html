@@ -22,144 +22,68 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- CSS -->
   <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="../Home/css/style.css" />
 </head>
 
 <body>
-  <!-- Top Bar -->
-  <div class="top_bar">
-    <div class="container_1">
-      <div class="top_bar_content">
-        <!-- Nội dung bên trái -->
-        <div class="top_bar_left">
-          <div class="hotline">
-            <span>Hotline:
-              <a href="#">0966158666</a>
-              (8h - 21h30)
-            </span>
-          </div>
-          <div class="text">
-            <a href="#"><span>Liên hệ hợp tác</span></a>
-          </div>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark align-items-center">
+      <div class="container">
+        <div class="navbar-brand">
+          <a style="color: #fff">Kết Nối</a>
+          <a href="#"><i class="fab fa-facebook px-2"></i></a>
+          <a href="#"><i class="fab fa-instagram px-2"></i></a>
+          <a href="#"><i class="fab fa-youtube px-2"></i></a>
         </div>
-        <!-- Nội dung bên phải -->
-        <div class="top_bar_right">
-          <ul>
-            <li>
-              <a href="#">Tìm cửa hàng</a>
+        <button class="navbar-toggler text-bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse 0" id="navbarNav1">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+            <li class="nav-item">
+              <a class="nav-link text-bg-dark" aria-current="page" href="../Account/register.html"><i class="fas fa-key pe-2"></i> Đăng Ký</a>
             </li>
-            <li class="li2">
-              <a href="#">Kiểm tra đơn hàng</a>
+            <li class="nav-item">
+              <a class="nav-link text-bg-dark" href="#"><i class="fas fa-user-tie pe-2"></i> Đăng Nhập</a>
             </li>
-            <li class="li2">
-              <a href="#">Mua hàng tại Shopify</a>
+            <li class="nav-item">
+              <a class="nav-link text-bg-dark" href="#"><i class="fas fa-cart-plus pe-2"></i> Giỏ hàng</a>
             </li>
           </ul>
         </div>
       </div>
-    </div>
-  </div>
-
-  <!-- Nav Bar -->
-  <nav class="nav_bar">
-    <div class="container_1">
-      <div class="nav_content">
-        <div class="logo">
-          <a href="#">
-            <img src="./img/logo.png" alt="Biti's Logo" width="100" />
-          </a>
-        </div>
-        <div class="nav_menu">
-          <ul class="nav_menu_list">
-            <li><a href="#">VỀ BITI'S</a></li>
-            <li>
-              <a href="#">NAM<i class="fa-solid fa-chevron-down"></i> </a>
-              <ul class="giay_nam">
-                <li><a href="#">Hunter</a></li>
-                <li><a href="#">Sandal</a></li>
-                <li><a href="#">Giày Thể Thao</a></li>
-                <li><a href="#">Giày Chạy Bộ</a></li>
-                <li><a href="#">Giày Đá Banh</a></li>
-                <li><a href="#">Giày Tây</a></li>
-                <li><a href="#">Dép</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">NỮ<i class="fa-solid fa-chevron-down"></i></a>
-              <ul class="giay_nu">
-                <li><a href="#">Hunter</a></li>
-                <li>
-                  <a href="#">GOSTO</a>
-                  <ul class="giay_nu_gosto">
-                    <li><a href="#">Giày Cao Gót</a></li>
-                    <li><a href="#">Giày Thời Trang</a></li>
-                    <li><a href="#">Sandal</a></li>
-                    <li><a href="#">Dép</a></li>
-                    <li><a href="#">Túi Xách - Ví</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Sandal</a></li>
-                <li><a href="#">Giày Búp Bê</a></li>
-                <li><a href="#">Giày Thời Trang</a></li>
-                <li><a href="#">Giày Chạy Bộ - Đi Bộ</a></li>
-                <li><a href="#">Giày Thể Thao</a></li>
-                <li><a href="#">Dép</a></li>
-                <li><a href="#">Túi Xách</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">BÉ TRAI<i class="fa-solid fa-chevron-down"></i></a>
-              <ul class="giay_be_trai">
-                <li><a href="#">Giày Thể Thao</a></li>
-                <li><a href="#">Sandal</a></li>
-                <li><a href="#">Dép</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">BÉ GÁI<i class="fa-solid fa-chevron-down"></i></a>
-              <ul class="giay_be_gai">
-                <li><a href="#">Giày Búp Bê</a></li>
-                <li><a href="#">Giày Thể Thao</a></li>
-                <li><a href="#">Sandal</a></li>
-                <li><a href="#">Dép Bé Gái</a></li>
-                <li><a href="#">Giày Tập Đi</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">PHỤ KIỆN<i class="fa-solid fa-chevron-down"></i></a>
-              <ul class="phu_kien">
-                <li><a href="#">Balo - Túi Xách</a></li>
-                <li><a href="#">Áo Thun</a></li>
-                <li><a href="#">Túi Tote</a></li>
-                <li><a href="#">Tất Vớ</a></li>
-                <li><a href="#">Nón</a></li>
-                <li><a href="#">Ví Nam</a></li>
-                <li><a href="#">Lót Đế</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">CHIA SẺ<i class="fa-solid fa-chevron-down"></i></a>
-              <ul class="chia_se">
-                <li><a href="#">Xu Hướng Thời Trang</a></li>
-                <li><a href="#">Tư Vấn Chọn Size</a></li>
-                <li><a href="#">Kinh Nghiệm Hay</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-        <div class="nav_item">
-          <div class="nav_search">
-            <form>
-              <button><i class="fa-solid fa-magnifying-glass"></i></button>
-              <input type="text" class="form-control" name="" id="" aria-describedby="helpId"
-                placeholder="Bạn cần tìm gì ..." />
+    </nav>
+  </header>
+  <nav class="navbar navbar-expand-lg bg-light align-items-center">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="../Home/Img/logo.png" alt="" width="100%" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item navshover active mx-auto">
+            <a class="nav-link" href="../Home/index.html">Trang Chủ</a>
+          </li>
+          <li class="nav-item navshover mx-auto">
+            <a class="nav-link" href="#">Sneaker Fest</a>
+          </li>
+          <li class="nav-item navshover mx-auto">
+            <a class="nav-link" href="#">Ưu đãi</a>
+          </li>
+          <li class="nav-item navshover mx-auto">
+            <a class="nav-link" href="#">Tin Tức</a>
+          </li>
+          <li class="nav-item navshover mx-auto">
+            <a class="nav-link" href="#">Về Chúng Tôi</a>
+          </li>
+          <li>
+            <form class="d-flex search-box" role="search">
+              <input class="form-control me-2 search-txt" type="search" placeholder="Bạn cần tìm gì...?" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
             </form>
-          </div>
-          <div class="nav_icon">
-            <a href="#"><i class="fa-regular fa-user"></i></a>
-            <a href="#"><i class="fa-regular fa-heart"></i></a>
-            <a href="#"><i class="fa-brands fa-shopify"></i></a>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>

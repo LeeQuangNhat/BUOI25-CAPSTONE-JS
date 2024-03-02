@@ -1,82 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <!-- Bootstrap CSS v5.2.1 -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <!-- FontAwesome 6.2.0 CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Oswald:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <!-- FontAwesome 6.2.0 CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- css -->
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/index.css" />
-    <link rel="stylesheet" href="./css/Product-Common.css" />
-  </head>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Oswald:wght@400;500;700&display=swap"
+    rel="stylesheet" />
 
-  <body>
-    <header class="container-fluid text-bg-dark">
-      <div class="row ps-5" >
-        <div class="col-lg-9 col-md-7 col-sm-4 col-5">
+  <!-- css -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="./css/Product-Common.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark align-items-center">
+      <div class="container">
+        <div class="navbar-brand">
           <a style="color: #fff">Kết Nối</a>
           <a href="#"><i class="fab fa-facebook px-2"></i></a>
           <a href="#"><i class="fab fa-instagram px-2"></i></a>
           <a href="#"><i class="fab fa-youtube px-2"></i></a>
         </div>
-
-        <div class="col-lg-3 col-md-5 col-sm-8 col">
-          <a href="./../Account/register.html" class="pe-3"><i class="fas fa-key pe-2"></i> Đăng Ký</a>|
-          <a href="#" class="px-3"
-            ><i class="fas fa-user-tie pe-2"></i> Đăng Nhập</a
-          >|
-          <a href="#" class="px-3"
-            ><i class="fas fa-cart-plus pe-2"></i> Giỏ hàng</a
-          >
-        </div>
-      </div>
-    </header>
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top px-5 bg-light">
-      <div class="d-flex justify-content-between">
-        <a class="navbar-brand" href="index.html"
-          ><img src="./Img/logo.png" alt="" width="10%"
-        /></a>
-        <button
-          class="navbar-toggler m-0"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler text-bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="collapse navbar-collapse 0" id="navbarNav1">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+            <li class="nav-item">
+              <a class="nav-link text-bg-dark" aria-current="page" href="../Account/register.html"><i class="fas fa-key pe-2"></i> Đăng Ký</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-bg-dark" href="#"><i class="fas fa-user-tie pe-2"></i> Đăng Nhập</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-bg-dark" href="#"><i class="fas fa-cart-plus pe-2"></i> Giỏ hàng</a>
+            </li>
+          </ul>
+        </div>
       </div>
-
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
+    </nav>
+  </header>
+  <nav class="navbar navbar-expand-lg bg-light align-items-center">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="./Img/logo.png" alt="" width="100%" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item navshover active mx-auto">
             <a class="nav-link" href="index.html">Trang Chủ</a>
           </li>
@@ -92,128 +77,114 @@
           <li class="nav-item navshover mx-auto">
             <a class="nav-link" href="#">Về Chúng Tôi</a>
           </li>
+          <li>
+            <form class="d-flex search-box" role="search">
+              <input class="form-control me-2 search-txt" type="search" placeholder="Bạn cần tìm gì...?" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
+            </form>
+          </li>
         </ul>
-        <form class="form-inline search-box">
-          <input
-            class="search-txt"
-            type="search"
-            placeholder=" Tìm Kiếm Sản Phẩm"
-          />
-          <a class="search-btn btn mx-auto" type="submit"
-            ><i class="fas fa-search"></i
-          ></a>
-        </form>
-      </div>
-    </nav>
-    <!-- Banner Hunter -->
-    <a href="#"
-      ><img src="./Img/Giay/BannerHunter.jpg" alt="" width="100%"
-    /></a>
-    <!-- Free Giao Hàng -->
-    <div class="container-fluid">
-      <div class="row justify-content-center text-center mt-4">
-        <div class="col-4 special">
-          <p><i class="fas fa-history"></i> MIỄN PHÍ 3 NGÀY ĐỔI HÀNG</p>
-        </div>
-        <div class="col-4 special">
-          <p><i class="fas fa-car"></i> MIỄN PHÍ GIAO HÀNG TOÀN QUỐC</p>
-        </div>
-        <div class="col-4 special">
-          <p><i class="fas fa-money-check-alt"></i> THANH TOÁN KHI NHẬN HÀNG</p>
-        </div>
       </div>
     </div>
-    <!-- Sản phẩm -->
-    <div class="container-fluid">
-      <div class="row text-center">
-        <div class="col-12 spnoibat my-2">
-          <h1>Sản Phẩm Của Chúng Tôi</h1>
-        </div>
+  </nav>
+
+  <!-- Banner Hunter -->
+  <a href="#"><img src="./Img/Giay/BannerHunter.jpg" alt="" width="100%" /></a>
+  <!-- Free Giao Hàng -->
+  <div class="container-fluid">
+    <div class="row justify-content-center text-center mt-4">
+      <div class="col-4 special">
+        <p><i class="fas fa-history"></i> MIỄN PHÍ 3 NGÀY ĐỔI HÀNG</p>
       </div>
-      <div class="container">
-        <div class="row render_product "></div>
+      <div class="col-4 special">
+        <p><i class="fas fa-car"></i> MIỄN PHÍ GIAO HÀNG TOÀN QUỐC</p>
+      </div>
+      <div class="col-4 special">
+        <p><i class="fas fa-money-check-alt"></i> THANH TOÁN KHI NHẬN HÀNG</p>
       </div>
     </div>
-    <div class="carousel-inner">
-      <img src="./Img/Giay/Sl1.jpg" class="d-block w-100 my-5" alt="..." />
+  </div>
+  <!-- Sản phẩm -->
+  <div class="container-fluid">
+    <div class="row text-center">
+      <div class="col-12 spnoibat my-2">
+        <h1>Sản Phẩm Của Chúng Tôi</h1>
+      </div>
     </div>
+    <div class="container">
+      <div class="row render_product"></div>
+    </div>
+  </div>
+  <div class="carousel-inner">
+    <img src="./Img/Giay/Sl1.jpg" class="d-block w-100 my-5" alt="..." />
+  </div>
 
-    <footer class="container-fluid " id="footer">
-      <div class="row pt-3 pb-3 bg-light dk pt-5 px-5">
-        <div class="col-lg-6 col-md-12 col-sm-12">
-          <h4>Đăng kí nhận bản tin</h4>
-          <p>Đừng bỏ lỡ hàng ngàn sản phẩm và chương trình siêu hấp dẫn</p>
-        </div>
-        <div class="col-lg-4 col-md-10 col-sm-9">
-          <div class="form-group">
-            <input
-              class="form-control"
-              type="text"
-              placeholder="Địa chỉ email của bạn"
-            />
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-2 col-sm-3">
-          <button class="btn btn-primary">Đăng Ký</button>
+  <footer class="container-fluid" id="footer">
+    <div class="row pt-3 pb-3 bg-light dk pt-5 px-5">
+      <div class="col-lg-6 col-md-12 col-sm-12">
+        <h4>Đăng kí nhận bản tin</h4>
+        <p>Đừng bỏ lỡ hàng ngàn sản phẩm và chương trình siêu hấp dẫn</p>
+      </div>
+      <div class="col-lg-4 col-md-10 col-sm-9">
+        <div class="form-group">
+          <input class="form-control" type="text" placeholder="Địa chỉ email của bạn" />
         </div>
       </div>
-      <div class="row mt-3 m2 px-5">
-        <div class="ft col-lg-3 col-md-6 col-sm-6 col-12">
-          <p>DANH MỤC SẢN PHẨM</p>
-          <p><a href="">Adidas</a></p>
-          <p><a href="">Air</a></p>
-          <p><a href="">OFF WHITE</a></p>
-          <p><a href="">FILA</a></p>
-          <p><a href="">Nike</a></p>
-          <p><a href="">Converse</a></p>
-        </div>
-        <div class="ft col-lg-3 col-md-6 col-sm-6 col-12">
-          <p>HỖ TRỢ KHÁCH HÀNG</p>
-          <p><a href="">Các câu hỏi thường gặp</a></p>
-          <p><a href="">Gửi yêu cầu hỗ trợ </a></p>
-          <p><a href="">Hướng dẫn đặt hàng</a></p>
-          <p><a href="">Phương thức vận chuyển</a></p>
-          <p><a href="">Chính sách đổi trả</a></p>
-          <p><a href="">Chính sách hàng nhập khẩu</a></p>
-          <p><a href="">Báo lỗi bảo mật</a></p>
-        </div>
-        <div class="ft col-lg-3 col-md-6 col-sm-12 col-12">
-          <p>NEW</p>
-          <p><a href="Store-Locate.html">Cửa Hàng</a></p>
-          <p><a href="Ve-chung-toi.html">Về Chúng Tôi</a></p>
-        </div>
-        <div class="ft col-lg-3 col-md-6 col-sm-12 pttt col-12">
-          <p>PHƯƠNG THỨC THANH TOÁN</p>
-          <img src="./Img/Assets/visa.svg" alt="" />
-          <img src="./Img/Assets/mastercard.svg" alt="" />
-          <img src="./Img/Assets/jcb.svg" alt="" />
-
-          <img src="./Img/Assets/cash.svg" alt="" />
-          <img src="./Img/Assets/internet-banking.svg" alt="" />
-          <img src="./Img/Assets/installment.svg" alt="" />
-        </div>
+      <div class="col-lg-2 col-md-2 col-sm-3">
+        <button class="btn btn-primary">Đăng Ký</button>
       </div>
-    </footer>
-    <!-- Bootstrap JavaScript Libraries -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
+    </div>
+    <div class="row mt-3 m2 px-5">
+      <div class="ft col-lg-3 col-md-6 col-sm-6 col-12">
+        <p>DANH MỤC SẢN PHẨM</p>
+        <p><a href="">Adidas</a></p>
+        <p><a href="">Air</a></p>
+        <p><a href="">OFF WHITE</a></p>
+        <p><a href="">FILA</a></p>
+        <p><a href="">Nike</a></p>
+        <p><a href="">Converse</a></p>
+      </div>
+      <div class="ft col-lg-3 col-md-6 col-sm-6 col-12">
+        <p>HỖ TRỢ KHÁCH HÀNG</p>
+        <p><a href="">Các câu hỏi thường gặp</a></p>
+        <p><a href="">Gửi yêu cầu hỗ trợ </a></p>
+        <p><a href="">Hướng dẫn đặt hàng</a></p>
+        <p><a href="">Phương thức vận chuyển</a></p>
+        <p><a href="">Chính sách đổi trả</a></p>
+        <p><a href="">Chính sách hàng nhập khẩu</a></p>
+        <p><a href="">Báo lỗi bảo mật</a></p>
+      </div>
+      <div class="ft col-lg-3 col-md-6 col-sm-12 col-12">
+        <p>NEW</p>
+        <p><a href="Store-Locate.html">Cửa Hàng</a></p>
+        <p><a href="Ve-chung-toi.html">Về Chúng Tôi</a></p>
+      </div>
+      <div class="ft col-lg-3 col-md-6 col-sm-12 pttt col-12">
+        <p>PHƯƠNG THỨC THANH TOÁN</p>
+        <img src="./Img/Assets/visa.svg" alt="" />
+        <img src="./Img/Assets/mastercard.svg" alt="" />
+        <img src="./Img/Assets/jcb.svg" alt="" />
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-      crossorigin="anonymous"
-    ></script>
+        <img src="./Img/Assets/cash.svg" alt="" />
+        <img src="./Img/Assets/internet-banking.svg" alt="" />
+        <img src="./Img/Assets/installment.svg" alt="" />
+      </div>
+    </div>
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js"
-      integrity="sha512-NQfB/bDaB8kaSXF8E77JjhHG5PM6XVRxvHzkZiwl3ddWCEPBa23T76MuWSwAJdMGJnmQqM0VeY9kFszsrBEFrQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
 
-    <script src="./js/index.js"></script>
-  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js"
+    integrity="sha512-NQfB/bDaB8kaSXF8E77JjhHG5PM6XVRxvHzkZiwl3ddWCEPBa23T76MuWSwAJdMGJnmQqM0VeY9kFszsrBEFrQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="./js/index.js"></script>
+</body>
+
 </html>

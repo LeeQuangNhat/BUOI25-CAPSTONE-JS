@@ -12,28 +12,26 @@ function renderProduct(arr) {
   for (let product of arr) {
     content += `
         <div class="col-md-4 col-lg-3 col-sm-6 col-6 my-3">
-          <button class=" mt-2 border border-white rounded-4  p-1 " style="background-image: linear-gradient(to right bottom, #e3bde7, #c1c5fe, #8bd0ff, #49d9fc, #2ededb, #42e1ce, #59e3c0, #6fe4b1, #68eac1, #63f0d1, #60f6e1, #5ffbf1)";>
-            <a href="../Detail/detail.html?idGiay=${product.id}">
-              <div class="product-common";>
-                <img src="${product.image}" class="w-100 imgproduct" />
-                <div class=" nrate px-2">
-                    <p style="font-size: 16px; overflow: hidden; color:#747576">${product.shortDescription}</p>
-                    <i class="far fa-star tick"></i>
-                    <i class="far fa-star tick"></i>
-                    <i class="far fa-star tick"></i>
-                    <i class="far fa-star tick"></i>
-                    <i class="far fa-star tick"></i>
-                </div>
-                <hr  />
-                <div class="product-name text-center">
-                    <h4>${product.name}</h4>
-                </div>
-                <div class="price-box text-center ">
-                    <span class="new-price">${product.price}$</span>
-                </div>
+          <a href="../Detail/detail.html?idGiay=${product.id}"  >
+            <div class="product-common  mt-2 border border-white rounded-4  p-1"; style="background-image: linear-gradient(to right bottom, #e3bde7, #c1c5fe, #8bd0ff, #49d9fc, #2ededb, #42e1ce, #59e3c0, #6fe4b1, #68eac1, #63f0d1, #60f6e1, #5ffbf1)";>
+              <img src="${product.image}" class="w-100 imgproduct" />
+              <div class=" nrate px-2">
+                  <p style="font-size: 16px; overflow: hidden; color:#747576">${product.shortDescription}</p>
+                  <i class="far fa-star tick"></i>
+                  <i class="far fa-star tick"></i>
+                  <i class="far fa-star tick"></i>
+                  <i class="far fa-star tick"></i>
+                  <i class="far fa-star tick"></i>
               </div>
-            </a>
-          </button>
+              <hr  />
+              <div class="product-name text-center">
+                <h4>${product.name}</h4>
+              </div>
+              <div class="price-box text-center ">
+                <span class="new-price">${product.price}$</span>
+              </div>
+            </div>
+          </a>
         </div>`;
   }
   document.querySelector(".render_product").innerHTML = content;
@@ -84,7 +82,7 @@ function renderChiTietGiay(product) {
         </button>
       </div>
       <button class="hang2">
-        <a href="#">TÌM SẢN PHẨM KHÁC TẠI HỆ THỐNG CỬA HÀNG</a>
+        <a href="../Home/index.html">TÌM SẢN PHẨM KHÁC TẠI HỆ THỐNG CỬA HÀNG</a>
       </button>
     </div>
       <div class=" descripiton-mg">
@@ -110,14 +108,10 @@ function renderChiTietGiay(product) {
 </div>
 `;
   document.querySelector(".item_content").innerHTML = render;
-  // let content =''
-  // for (let i = 0; i<product.content.size.length;i++){
-  //   content += `<button>${product.content.size[i]}</button>`
-  //   console.log(content)
-  // }
-  // document.querySelector('.item_content_right_size').innerHTML = content 
-  const content = product.content.size.map(size => `<button>${size}</button>`).join('');
-  document.querySelector('.item_content_right_size').innerHTML = content;
-
+  let content =''
+  for (let i = 0; i<product.content.size.length;i++){
+    content += `<button>${product.content.size[i]}</button>`
+    console.log(content)
+  }
+  document.querySelector('.item_content_right_size').innerHTML = content
 }
-
