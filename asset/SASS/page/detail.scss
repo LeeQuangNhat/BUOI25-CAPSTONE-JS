@@ -1,0 +1,54 @@
+// mixin
+@mixin styleText($color, $fs, $fw, $deco: none) {
+  color: $color;
+  font-size: $fs;
+  font-weight: $fw;
+  text-decoration: $deco;
+}
+
+// Container
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.container_1 {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+// Font size
+$fs_title_1: 13px;
+$fs_content: 14px;
+$fs_logo: 26px;
+$fs_title: 24px;
+$fs_number: 1.1em;
+
+// Layout Item
+@import "../layout/Item";
+
+formart ul ol a ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+a {
+  color: var(--shop-color-text);
+  text-decoration: none;
+  outline: none;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+// Product
+@import "./../layout/productdetail";
+
+// review summary
+@import "./../layout/review";
+
+// section footer gallery
+@import "./../layout/gallery";

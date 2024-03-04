@@ -1,0 +1,65 @@
+// header
+@media only screen and (max-width: 992px) {
+  .search-box:hover > .search-txt {
+    width: 100%;
+    background: #fff;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  header a {
+    font-size: 12px;
+    color: #fff;
+  }
+  .hrspnb {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .search-box:hover > .search-txt {
+    width: 100%;
+    background: #fff;
+  }
+}
+//product
+@media only screen and (max-width: 475px){
+  .add-actions-link{
+      display: none;
+  }
+  .product-name h4{
+      font-size:16px
+  }
+  .nrate .fa-star{
+      display: none;
+  }
+  .price-box .new-price{
+      font-size: 12px;
+  }
+  .price-box .old-price{
+      font-size: 12px;
+  }
+}
+//footer
+@media only screen and (min-width: 992px) {
+  footer .sb {
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  footer .dk {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 578px) {
+  footer .row .col p a {
+    font-size: 16px;
+    text-decoration: none;
+  }
+  footer .m2 {
+    text-align: center;
+  }
+  footer .form-group input {
+    text-align: center;
+  }
+}
