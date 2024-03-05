@@ -57,13 +57,13 @@ hienThiChiTietGiay();
 function renderChiTietGiay(product) {
   let render = `
 
-    <div class="item_content_left col-6 position-relative">
+    <div class="item_content_left col-md-6 position-relative">
       <img src="${product.content.image}" alt="${product.content.image}" />
       <button class="position-absolute" style="top: 3%; right: 3%;">
         <i class="fa-regular fa-heart"></i>
       </button>
     </div>
-  <div class="item_content_right col-6">
+  <div class="item_content_right col-md-6">
     <h1>${product.content.name}</h1>
     <span class="item_price">${product.content.price}$</span>
     <div class="item_content_right_size "></div>
@@ -115,19 +115,19 @@ function renderChiTietGiay(product) {
   document.querySelector(".item_content_right_size").innerHTML = content;
 }
 
-let soLuong = 1; 
+let soLuong = 1;
 function updateSoLuong(number) {
   soLuong += number;
-  if (soLuong < 1){
+  if (soLuong < 1) {
     soLuong = 1;
   }
-  document.querySelector('.num').textContent = soLuong;
+  document.querySelector(".num").textContent = soLuong;
 }
 
 function chonSize(click) {
-  let button = document.querySelectorAll('.item_content_right_size button');
-  button.forEach(function(btn) {
-    btn.classList.remove('chonSize');
+  let button = document.querySelectorAll(".item_content_right_size button");
+  button.forEach(function (btn) {
+    btn.classList.remove("chonSize");
   });
-  click.classList.add('chonSize');
+  click.classList.add("chonSize");
 }

@@ -648,6 +648,9 @@ a {
   align-items: center;
   justify-content: flex-start;
 }
+.review_summary .review_summary__detail .rv_summary__content ul {
+  list-style: none;
+}
 .review_summary .review_summary__detail .rv_summary__content li[class*=rated_star__] .rated_star__section span:not(:last-child) {
   margin-right: 5px;
 }

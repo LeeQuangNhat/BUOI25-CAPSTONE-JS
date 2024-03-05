@@ -33,7 +33,9 @@
       display: flex;
       align-items: center;
       justify-content: flex-start;
-
+      ul{
+        list-style: none;
+      }
       li[class*="rated_star__"] .rated_star__section span:not(:last-child) {
         margin-right: 5px;
       }

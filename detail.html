@@ -1,1242 +1,1685 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-  <title>Title</title>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Oswald:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Google font -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Oswald:wght@400;500;700&display=swap"
-    rel="stylesheet" />
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
 
-  <!-- Bootstrap CSS v5.2.1 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./asset/css/style.css" />
+  </head>
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- CSS -->
-  <link rel="stylesheet" href="./asset/css/style.css">
-</head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-dark align-items-center">
+        <div class="container">
+          <div class="navbar-brand">
+            <span style="color: #fff; font-size: 16px">Kết Nối</span>
+            <a href="#"><i class="fab fa-facebook px-2"></i></a>
+            <a href="#"><i class="fab fa-instagram px-2"></i></a>
+            <a href="#"><i class="fab fa-youtube px-2"></i></a>
+          </div>
+          <button
+            class="navbar-toggler text-bg-light"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav1"
+            aria-controls="navbarNav1"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse 0" id="navbarNav1">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-bg-dark"
+                  aria-current="page"
+                  href="./register.html"
+                  ><i class="fas fa-key pe-2"></i> Đăng Ký</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-bg-dark" href="#"
+                  ><i class="fas fa-user-tie pe-2"></i> Đăng Nhập</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-bg-dark" href="#"
+                  ><i class="fas fa-cart-plus pe-2"></i> Giỏ hàng</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="header_navbar">
+      <nav class="navbar navbar-expand-lg bg-light align-items-center">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html"
+            ><img src="./asset/img/logo.png" alt="" width="100%"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item navshover mx-auto">
+                <a class="nav-link" href="./index.html">Trang Chủ</a>
+              </li>
+              <li class="nav-item navshover mx-auto">
+                <a class="nav-link" href="#">Sneaker Fest</a>
+              </li>
+              <li class="nav-item navshover mx-auto">
+                <a class="nav-link" href="#">Ưu đãi</a>
+              </li>
+              <li class="nav-item navshover mx-auto">
+                <a class="nav-link" href="#">Tin Tức</a>
+              </li>
+              <li class="nav-item navshover mx-auto">
+                <a class="nav-link" href="#">Về Chúng Tôi</a>
+              </li>
+              <li>
+                <form class="d-flex search-box" role="search">
+                  <input
+                    class="form-control me-2 search-txt"
+                    type="search"
+                    placeholder="Bạn cần tìm gì...?"
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-outline-success" type="submit">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </form>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
 
-<body>
-  <header>
-    <nav class="navbar navbar-expand-lg bg-dark align-items-center">
+    <!-- Item -->
+    <div class="item">
       <div class="container">
-        <div class="navbar-brand">
-          <span style="color: #fff; font-size: 16px;">Kết Nối</span>
-          <a href="#"><i class="fab fa-facebook px-2"></i></a>
-          <a href="#"><i class="fab fa-instagram px-2"></i></a>
-          <a href="#"><i class="fab fa-youtube px-2"></i></a>
-        </div>
-        <button
-          class="navbar-toggler text-bg-light"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav1"
-          aria-controls="navbarNav1"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse 0" id="navbarNav1">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a
-                class="nav-link text-bg-dark"
-                aria-current="page"
-                href="./register.html"
-                ><i class="fas fa-key pe-2"></i> Đăng Ký</a
+        <div class="item_content row">
+          <div class="item-content-buy row"></div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="item_content_right_love">
+                <div class="item_content_right_love_text">
+                  <ul>
+                    <li>
+                      <i
+                        class="fa-solid fa-shield-heart"
+                        style="width: 50px; height: 42px; text-align: center"
+                      ></i
+                      >Cam kết chính hãng Biti's100%
+                    </li>
+                    <hr />
+                    <li>
+                      <i
+                        class="fa-solid fa-award"
+                        style="width: 50px; height: 42px; text-align: center"
+                      ></i>
+                      Bảo hành 06 tháng
+                      <a href="#" class="ps-1"> (click xem chi tiết)</a>
+                    </li>
+                    <hr />
+                    <li>
+                      <i
+                        class="fa-solid fa-shop"
+                        style="width: 50px; height: 42px; text-align: center"
+                      ></i>
+                      Đổi size trong vòng 7 ngày
+                      <a href="#" class="ps-1">(click xem chi tiết)</a>
+                    </li>
+                    <hr />
+                    <li>
+                      <i
+                        class="fa-solid fa-money-bill-transfer"
+                        style="width: 50px; height: 42px; text-align: center"
+                      ></i>
+                      Đổi trả hàng trong vòng 7 ngày
+                      <a href="#" class="ps-1">(click xem chi tiết)</a>
+                    </li>
+                    <hr />
+                    <li>
+                      <i
+                        class="fa-solid fa-truck-fast"
+                        style="width: 50px; height: 42px; text-align: center"
+                      ></i>
+                      Free ship đơn hàng 1.5Triệu
+                    </li>
+                    <hr />
+                    <li>
+                      <i
+                        class="fa-solid fa-jet-fighter"
+                        style="width: 50px; height: 42px; text-align: center"
+                      ></i>
+                      Giao hàng 2h Grab khu vực HCM T2 - T7 (8H00 - 11H00 và
+                      14H00 - 16H00)
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div
+                class="item_content_right_coupon d-flex justify-content-start"
               >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-bg-dark" href="#"
-                ><i class="fas fa-user-tie pe-2"></i> Đăng Nhập</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-bg-dark" href="#"
-                ><i class="fas fa-cart-plus pe-2"></i> Giỏ hàng</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <div class="header_navbar">
-    <nav class="navbar navbar-expand-lg bg-light align-items-center">
-      <div class="container">
-        <a class="navbar-brand" href="./index.html"
-          ><img src="./asset/img/logo.png" alt="" width="100%"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item navshover  mx-auto">
-              <a class="nav-link" href="./index.html">Trang Chủ</a>
-            </li>
-            <li class="nav-item navshover mx-auto">
-              <a class="nav-link" href="#">Sneaker Fest</a>
-            </li>
-            <li class="nav-item navshover mx-auto">
-              <a class="nav-link" href="#">Ưu đãi</a>
-            </li>
-            <li class="nav-item navshover mx-auto">
-              <a class="nav-link" href="#">Tin Tức</a>
-            </li>
-            <li class="nav-item navshover mx-auto">
-              <a class="nav-link" href="#">Về Chúng Tôi</a>
-            </li>
-            <li>
-              <form class="d-flex search-box" role="search">
-                <input
-                  class="form-control me-2 search-txt"
-                  type="search"
-                  placeholder="Bạn cần tìm gì...?"
-                  aria-label="Search"
-                />
-                <button class="btn btn-outline-success" type="submit">
-                  <i class="fas fa-search"></i>
-                </button>
-              </form>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </div>
+                <div class="coupon_item_left">
+                  <img src="./asset/img/icon.png" alt="Voucher giảm giá" />
+                </div>
+                <div class="coupon_item_right ps-4">
+                  <h4 class="position-relative mb-0">
+                    Giảm 120.000đ<i
+                      class="fa-solid fa-circle-info"
+                      style="position: absolute; top: 0; right: 0"
+                    ></i>
+                  </h4>
 
-  <!-- Item -->
-  <div class="item">
-    <div class="container">
-      <div class="item_content row">
-        <div class="item-content-buy row"></div>
-        <div class="row">
-          <div class="col-6">
-            <div class="item_content_right_love">
-              <div class="item_content_right_love_text">
+                  <p class="mb-0">Đơn hàng từ 899.000đ trở lên</p>
+                  <div
+                    class="coupon_info d-flex justify-content-between align-items-center"
+                  >
+                    <div class="coupon_info_left">
+                      <p class="mb-0">
+                        Mã <b class="code">120K0103KM1503KM</b>
+                      </p>
+                      <p>HSD: 15/04/2024</p>
+                    </div>
+                    <div class="coupon_info_right ps-5">
+                      <button>Sao chép mã</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="item_content_right_coupon d-flex justify-content-start"
+              >
+                <div class="coupon_item_left">
+                  <img src="./asset/img/icon.png" alt="Voucher giảm giá" />
+                </div>
+                <div class="coupon_item_right ps-4">
+                  <h4 class="position-relative mb-0">
+                    Giảm 120.000đ<i
+                      class="fa-solid fa-circle-info"
+                      style="position: absolute; top: 0; right: 0"
+                    ></i>
+                  </h4>
+
+                  <p class="mb-0">Đơn hàng từ 899.000đ trở lên</p>
+                  <div
+                    class="coupon_info d-flex justify-content-between align-items-center"
+                  >
+                    <div class="coupon_info_left">
+                      <p class="mb-0">
+                        Mã <b class="code">120K0103KM1503KM</b>
+                      </p>
+                      <p>HSD: 15/04/2024</p>
+                    </div>
+                    <div class="coupon_info_right ps-5">
+                      <button>Sao chép mã</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="item_content_right_coupon d-flex justify-content-start"
+              >
+                <div class="coupon_item_left">
+                  <img src="./asset/img/icon.png" alt="Voucher giảm giá" />
+                </div>
+                <div class="coupon_item_right ps-4">
+                  <h4 class="position-relative mb-0">
+                    Giảm 120.000đ<i
+                      class="fa-solid fa-circle-info"
+                      style="position: absolute; top: 0; right: 0"
+                    ></i>
+                  </h4>
+
+                  <p class="mb-0">Đơn hàng từ 899.000đ trở lên</p>
+                  <div
+                    class="coupon_info d-flex justify-content-between align-items-center"
+                  >
+                    <div class="coupon_info_left">
+                      <p class="mb-0">
+                        Mã <b class="code">120K0103KM1503KM</b>
+                      </p>
+                      <p>HSD: 15/04/2024</p>
+                    </div>
+                    <div class="coupon_info_right ps-5">
+                      <button>Sao chép mã</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item_content_right_discount">
                 <ul>
                   <li>
-                    <i class="fa-solid fa-shield-heart" style="width: 50px; height: 42px; text-align: center;"></i>Cam kết chính hãng
-                    Biti's100%
-                  </li>
-                  <hr />
-                  <li>
-                    <i class="fa-solid fa-award" style="width: 50px; height: 42px; text-align: center;"></i>
-                    Bảo hành 06 tháng <a href="#" class="ps-1"> (click xem chi tiết)</a>
-                  </li>
-                  <hr />
-                  <li>
-                    <i class="fa-solid fa-shop"style="width: 50px; height: 42px; text-align: center;"></i>
-                    Đổi size trong vòng 7 ngày
-                    <a href="#"class="ps-1">(click xem chi tiết)</a>
-                  </li>
-                  <hr />
-                  <li>
-                    <i class="fa-solid fa-money-bill-transfer"style="width: 50px; height: 42px; text-align: center;"></i>
-                    Đổi trả hàng trong vòng 7 ngày
-                    <a href="#"class="ps-1">(click xem chi tiết)</a>
-                  </li>
-                  <hr />
-                  <li>
-                    <i class="fa-solid fa-truck-fast"style="width: 50px; height: 42px; text-align: center;"></i>
-                    Free ship đơn hàng 1.5Triệu
-                  </li>
-                  <hr />
-                  <li>
-                    <i class="fa-solid fa-jet-fighter"style="width: 50px; height: 42px; text-align: center;"></i>
-                    Giao hàng 2h Grab khu vực HCM T2 - T7 (8H00 - 11H00 và 14H00
-                    - 16H00)
+                    Thời gian áp dụng các mã khuyến mãi
+                    <b>120K0103KM1503KM</b> và <b>90K0103KM1503KM</b> và
+                    <b>50K0103KM1503KM</b> từ 00g00 ngày 01/03/2024 đến 23h59
+                    ngày 15/03/2024 KHÔNG ÁP DỤNG chung với chương trình giảm
+                    giá và quà tặng.
+                    <span class="text-danger">Chỉ áp dụng khi mua online.</span>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
-          <div class="col-6">
-            <div class="item_content_right_coupon d-flex justify-content-start">
-              <div class="coupon_item_left">
-                <img src="./asset/img/icon.png" alt="Voucher giảm giá" />
-              </div>
-              <div class="coupon_item_right ps-4">
-                <h4 class="position-relative mb-0">Giảm 120.000đ<i class="fa-solid fa-circle-info" style="position: absolute; top: 0;right: 0;"></i></h4>
-                
-                <p class="mb-0">Đơn hàng từ 899.000đ trở lên</p>
-                <div class="coupon_info d-flex justify-content-between align-items-center">
-                  <div class="coupon_info_left">
-                    <p class="mb-0">Mã <b class="code ">120K0103KM1503KM</b></p>
-                    <p>HSD: 15/04/2024</p>
-                  </div>
-                  <div class="coupon_info_right ps-5">
-                    <button>Sao chép mã</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item_content_right_coupon d-flex justify-content-start">
-              <div class="coupon_item_left">
-                <img src="./asset/img/icon.png" alt="Voucher giảm giá" />
-              </div>
-              <div class="coupon_item_right ps-4">
-                <h4 class="position-relative mb-0">Giảm 120.000đ<i class="fa-solid fa-circle-info" style="position: absolute; top: 0;right: 0;"></i></h4>
-                
-                <p class="mb-0">Đơn hàng từ 899.000đ trở lên</p>
-                <div class="coupon_info d-flex justify-content-between align-items-center">
-                  <div class="coupon_info_left">
-                    <p class="mb-0">Mã <b class="code ">120K0103KM1503KM</b></p>
-                    <p>HSD: 15/04/2024</p>
-                  </div>
-                  <div class="coupon_info_right ps-5">
-                    <button>Sao chép mã</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item_content_right_coupon d-flex justify-content-start">
-              <div class="coupon_item_left">
-                <img src="./asset/img/icon.png" alt="Voucher giảm giá" />
-              </div>
-              <div class="coupon_item_right ps-4">
-                <h4 class="position-relative mb-0">Giảm 120.000đ<i class="fa-solid fa-circle-info" style="position: absolute; top: 0;right: 0;"></i></h4>
-                
-                <p class="mb-0">Đơn hàng từ 899.000đ trở lên</p>
-                <div class="coupon_info d-flex justify-content-between align-items-center">
-                  <div class="coupon_info_left">
-                    <p class="mb-0">Mã <b class="code ">120K0103KM1503KM</b></p>
-                    <p>HSD: 15/04/2024</p>
-                  </div>
-                  <div class="coupon_info_right ps-5">
-                    <button>Sao chép mã</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item_content_right_discount">
-              <ul>
-                <li>
-                  Thời gian áp dụng các mã khuyến mãi <b>120K0103KM1503KM</b> và
-                   <b>90K0103KM1503KM</b> và <b>50K0103KM1503KM</b> từ 00g00 ngày 01/03/2024
-                  đến 23h59 ngày 15/03/2024 KHÔNG ÁP DỤNG chung với chương trình
-                  giảm giá và quà tặng.
-                  <span class="text-danger">Chỉ áp dụng khi mua online.</span>
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="container">
-    <!-- Sản phẩm nổi bật -->
-    <section class="row productDetail-related">
-      <div class="col-12">
-        <div class="section-heading-tab d-flex align-items-center">
-          <h3>TOP SẢN PHẨM NỔI BẬT</h3>
-        </div>
-      </div>
-      <div class="col-md-12">
-        <div id="carouselProductControls" class="carousel carousel-style">
-          <div class="carousel-inner">
-            <div class="carousel-item">
-              <div class="card">
-                <div class="product-favorite">
-                  <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="product-label">
-                  <div class="pro-new">Mới</div>
-                </div>
-                <div class="img-wrapper">
-                  <img src="./asset/img/Trang 3.jpg" class="d-block w-100" alt="..." />
-                </div>
-                <div class="card-body">
-                  <div class="product-box-info">
-                    <div class="product-box-variable d-flex align-items-center justify-content-between">
-                      <div class="box-number-size">5 Size</div>
-                      <div class="box-number-color">1 Màu sắc</div>
-                    </div>
-                    <div class="product-box-title">
-                      <h4>
-                        <a href="/products/giay-the-thao-nu-biti-s-hunter-x-dune-4-nguyen-to-lua-hsw004204">[Tặng Áo
-                          Thun] Giày Thể Thao Nữ Biti’s Hunter X
-                          Dune - 4 Nguyên Tố: LỬA HSW004204</a>
-                      </h4>
-                    </div>
-                    <div class="product-box-price d-flex align-items-center">
-                      <div class="main-price">1,207,000 ₫</div>
-                    </div>
-                    <div class="product-swatch-loop d-flex flex-wrap align-items-center justify-content-center">
-                      <div class="w-100 swatch-loop-item d-flex align-items-center justify-content-center flex-wrap">
-                        <span data-color="Xám" style="
-                              background: url('//product.hstatic.net/1000230642/product/ti-s-hunter-core-checkmate-collection-hsw000100xam-xam-vjgf3-color-xam_8bd709bd84694181ba7c5d1336fa513a_thumb.jpg') !important;
-                              background-size: contain !important;
-                            "
-                          data-img="//product.hstatic.net/1000230642/product/ti-s-hunter-core-checkmate-collection-hsw000100xam-xam-vjgf3-color-xam_8bd709bd84694181ba7c5d1336fa513a_large.jpg"
-                          class="item-color"></span>
-                        <span data-color="Trắng" style="
-                              background: url('//product.hstatic.net/1000230642/product/-hunter-core-checkmate-collection-hsw000100trg-trang-6n7ik-color-trang_455b889049fd4143b38e292e0200776d_thumb.jpg') !important;
-                              background-size: contain !important;
-                            "
-                          data-img="//product.hstatic.net/1000230642/product/-hunter-core-checkmate-collection-hsw000100trg-trang-6n7ik-color-trang_455b889049fd4143b38e292e0200776d_large.jpg"
-                          class="item-color"></span>
-                        <span data-color="Đen" style="
-                              background: url('//product.hstatic.net/1000230642/product/tion-hsw000100den-den-fx9d4-color-den_f0efd0e8728748cb96bea2c21254c7ae_2d569d3844cf400eada24c2476529b8e_thumb.jpg') !important;
-                              background-size: contain !important;
-                            "
-                          data-img="//product.hstatic.net/1000230642/product/tion-hsw000100den-den-fx9d4-color-den_f0efd0e8728748cb96bea2c21254c7ae_2d569d3844cf400eada24c2476529b8e_large.jpg"
-                          class="item-color active"></span>
-                      </div>
-
-                      <div style="display: none" class="product-action">
-                        <button class="add-to-cart-loop">Mua ngay</button>
-                      </div>
-                    </div>
-                    <div
-                      data-test="Đỏ-https://product.hstatic.net/1000230642/product/hsw004204doo2_341abd5e49814f6cb81da04042ca68e1.jpg"
-                      class="product-swatch-loop d-flex flex-wrap align-items-center justify-content-center">
-                      <div style="display: none" class="product-action">
-                        <button class="add-to-cart-loop">Mua ngay</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="card">
-                <div class="product-favorite">
-                  <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="product-label">
-                  <div class="pro-new">Mới</div>
-                </div>
-                <div class="img-wrapper">
-                  <img src="./asset/img/Trang 3.jpg" class="d-block w-100" alt="..." />
-                </div>
-                <div class="card-body">
-                  <div class="product-box-info">
-                    <div class="product-box-variable d-flex align-items-center justify-content-between">
-                      <div class="box-number-size">5 Size</div>
-                      <div class="box-number-color">1 Màu sắc</div>
-                    </div>
-                    <div class="product-box-title">
-                      <h4>
-                        <a href="/products/giay-the-thao-nu-biti-s-hunter-x-dune-4-nguyen-to-lua-hsw004204">[Tặng Áo
-                          Thun] Giày Thể Thao Nữ Biti’s Hunter X
-                          Dune - 4 Nguyên Tố: LỬA HSW004204</a>
-                      </h4>
-                    </div>
-                    <div class="product-box-price d-flex align-items-center">
-                      <div class="main-price">1,207,000 ₫</div>
-                    </div>
-                    <div class="product-swatch-loop d-flex flex-wrap align-items-center justify-content-center">
-                      <div class="w-100 swatch-loop-item d-flex align-items-center justify-content-center flex-wrap">
-                        <span data-color="Xám" style="
-                              background: url('//product.hstatic.net/1000230642/product/ti-s-hunter-core-checkmate-collection-hsw000100xam-xam-vjgf3-color-xam_8bd709bd84694181ba7c5d1336fa513a_thumb.jpg') !important;
-                              background-size: contain !important;
-                            "
-                          data-img="//product.hstatic.net/1000230642/product/ti-s-hunter-core-checkmate-collection-hsw000100xam-xam-vjgf3-color-xam_8bd709bd84694181ba7c5d1336fa513a_large.jpg"
-                          class="item-color"></span>
-                        <span data-color="Trắng" style="
-                              background: url('//product.hstatic.net/1000230642/product/-hunter-core-checkmate-collection-hsw000100trg-trang-6n7ik-color-trang_455b889049fd4143b38e292e0200776d_thumb.jpg') !important;
-                              background-size: contain !important;
-                            "
-                          data-img="//product.hstatic.net/1000230642/product/-hunter-core-checkmate-collection-hsw000100trg-trang-6n7ik-color-trang_455b889049fd4143b38e292e0200776d_large.jpg"
-                          class="item-color"></span>
-                        <span data-color="Đen" style="
-                              background: url('//product.hstatic.net/1000230642/product/tion-hsw000100den-den-fx9d4-color-den_f0efd0e8728748cb96bea2c21254c7ae_2d569d3844cf400eada24c2476529b8e_thumb.jpg') !important;
-                              background-size: contain !important;
-                            "
-                          data-img="//product.hstatic.net/1000230642/product/tion-hsw000100den-den-fx9d4-color-den_f0efd0e8728748cb96bea2c21254c7ae_2d569d3844cf400eada24c2476529b8e_large.jpg"
-                          class="item-color active"></span>
-                      </div>
-
-                      <div style="display: none" class="product-action">
-                        <button class="add-to-cart-loop">Mua ngay</button>
-                      </div>
-                    </div>
-                    <div
-                      data-test="Đỏ-https://product.hstatic.net/1000230642/product/hsw004204doo2_341abd5e49814f6cb81da04042ca68e1.jpg"
-                      class="product-swatch-loop d-flex flex-wrap align-items-center justify-content-center">
-                      <div style="display: none" class="product-action">
-                        <button class="add-to-cart-loop">Mua ngay</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="card">
-                <div class="product-favorite">
-                  <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="product-label">
-                  <div class="pro-new">Mới</div>
-                </div>
-                <div class="img-wrapper">
-                  <img src="./asset/img/Trang 3.jpg" class="d-block w-100" alt="..." />
-                </div>
-                <div class="card-body">
-                  <div class="product-box-info">
-                    <div class="product-box-variable d-flex align-items-center justify-content-between">
-                      <div class="box-number-size">5 Size</div>
-                      <div class="box-number-color">1 Màu sắc</div>
-                    </div>
-                    <div class="product-box-title">
-                      <h4>
-                        <a href="/products/giay-the-thao-nu-biti-s-hunter-x-dune-4-nguyen-to-lua-hsw004204">[Tặng Áo
-                          Thun] Giày Thể Thao Nữ Biti’s Hunter X
-                          Dune - 4 Nguyên Tố: LỬA HSW004204</a>
-                      </h4>
-                    </div>
-                    <div class="product-box-price d-flex align-items-center">
-                      <div class="main-price">1,207,000 ₫</div>
-                    </div>
-                    <div class="product-swatch-loop d-flex flex-wrap align-items-center justify-content-center">
-                      <div class="w-100 swatch-loop-item d-flex align-items-center justify-content-center flex-wrap">
-                        <span data-color="Xám" style="
-                              background: url('//product.hstatic.net/1000230642/product/ti-s-hunter-core-checkmate-collection-hsw000100xam-xam-vjgf3-color-xam_8bd709bd84694181ba7c5d1336fa513a_thumb.jpg') !important;
-                              background-size: contain !important;
-                            "
-                          data-img="//product.hstatic.net/1000230642/product/ti-s-hunter-core-checkmate-collection-hsw000100xam-xam-vjgf3-color-xam_8bd709bd84694181ba7c5d1336fa513a_large.jpg"
-                          class="item-color"></span>
-                        <span data-color="Trắng" style="
-                              background: url('//product.hstatic.net/1000230642/product/-hunter-core-checkmate-collection-hsw000100trg-trang-6n7ik-color-trang_455b889049fd4143b38e292e0200776d_thumb.jpg') !important;
-                              background-size: contain !important;
-                            "
-                          data-img="//product.hstatic.net/1000230642/product/-hunter-core-checkmate-collection-hsw000100trg-trang-6n7ik-color-trang_455b889049fd4143b38e292e0200776d_large.jpg"
-                          class="item-color"></span>
-                        <span data-color="Đen" style="
-                              background: url('//product.hstatic.net/1000230642/product/tion-hsw000100den-den-fx9d4-color-den_f0efd0e8728748cb96bea2c21254c7ae_2d569d3844cf400eada24c2476529b8e_thumb.jpg') !important;
-                              background-size: contain !important;
-                            "
-                          data-img="//product.hstatic.net/1000230642/product/tion-hsw000100den-den-fx9d4-color-den_f0efd0e8728748cb96bea2c21254c7ae_2d569d3844cf400eada24c2476529b8e_large.jpg"
-                          class="item-color active"></span>
-                      </div>
-
-                      <div style="display: none" class="product-action">
-                        <button class="add-to-cart-loop">Mua ngay</button>
-                      </div>
-                    </div>
-                    <div
-                      data-test="Đỏ-https://product.hstatic.net/1000230642/product/hsw004204doo2_341abd5e49814f6cb81da04042ca68e1.jpg"
-                      class="product-swatch-loop d-flex flex-wrap align-items-center justify-content-center">
-                      <div style="display: none" class="product-action">
-                        <button class="add-to-cart-loop">Mua ngay</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="card">
-                <div class="product-favorite">
-                  <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="product-label">
-                  <div class="pro-new">Mới</div>
-                </div>
-                <div class="img-wrapper">
-                  <img src="./asset/img/Trang 3.jpg" class="d-block w-100" alt="..." />
-                </div>
-                <div class="card-body">
-                  <div class="product-box-info">
-                    <div class="product-box-variable d-flex align-items-center justify-content-between">
-                      <div class="box-number-size">5 Size</div>
-                      <div class="box-number-color">1 Màu sắc</div>
-                    </div>
-                    <div class="product-box-title">
-                      <h4>
-                        <a href="/products/giay-the-thao-nu-biti-s-hunter-x-dune-4-nguyen-to-lua-hsw004204">[Tặng Áo
-                          Thun] Giày Thể Thao Nữ Biti’s Hunter X
-                          Dune - 4 Nguyên Tố: LỬA HSW004204</a>
-                      </h4>
-                    </div>
-                    <div class="product-box-price d-flex align-items-center">
-                      <div class="main-price">1,207,000 ₫</div>
-                    </div>
-                    <div class="product-swatch-loop d-flex flex-wrap align-items-center justify-content-center">
-                      <div class="w-100 swatch-loop-item d-flex align-items-center justify-content-center flex-wrap">
-                        <span data-color="Xám" style="
-                              background: url('//product.hstatic.net/1000230642/product/ti-s-hunter-core-checkmate-collection-hsw000100xam-xam-vjgf3-color-xam_8bd709bd84694181ba7c5d1336fa513a_thumb.jpg') !important;
-                              background-size: contain !important;
-                            "
-                          data-img="//product.hstatic.net/1000230642/product/ti-s-hunter-core-checkmate-collection-hsw000100xam-xam-vjgf3-color-xam_8bd709bd84694181ba7c5d1336fa513a_large.jpg"
-                          class="item-color"></span>
-                        <span data-color="Trắng" style="
-                              background: url('//product.hstatic.net/1000230642/product/-hunter-core-checkmate-collection-hsw000100trg-trang-6n7ik-color-trang_455b889049fd4143b38e292e0200776d_thumb.jpg') !important;
-                              background-size: contain !important;
-                            "
-                          data-img="//product.hstatic.net/1000230642/product/-hunter-core-checkmate-collection-hsw000100trg-trang-6n7ik-color-trang_455b889049fd4143b38e292e0200776d_large.jpg"
-                          class="item-color"></span>
-                        <span data-color="Đen" style="
-                              background: url('//product.hstatic.net/1000230642/product/tion-hsw000100den-den-fx9d4-color-den_f0efd0e8728748cb96bea2c21254c7ae_2d569d3844cf400eada24c2476529b8e_thumb.jpg') !important;
-                              background-size: contain !important;
-                            "
-                          data-img="//product.hstatic.net/1000230642/product/tion-hsw000100den-den-fx9d4-color-den_f0efd0e8728748cb96bea2c21254c7ae_2d569d3844cf400eada24c2476529b8e_large.jpg"
-                          class="item-color active"></span>
-                      </div>
-
-                      <div style="display: none" class="product-action">
-                        <button class="add-to-cart-loop">Mua ngay</button>
-                      </div>
-                    </div>
-                    <div
-                      data-test="Đỏ-https://product.hstatic.net/1000230642/product/hsw004204doo2_341abd5e49814f6cb81da04042ca68e1.jpg"
-                      class="product-swatch-loop d-flex flex-wrap align-items-center justify-content-center">
-                      <div style="display: none" class="product-action">
-                        <button class="add-to-cart-loop">Mua ngay</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="card">
-                <div class="product-favorite">
-                  <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="product-label">
-                  <div class="pro-new">Mới</div>
-                </div>
-                <div class="img-wrapper">
-                  <img src="./asset/img/Trang 3.jpg" class="d-block w-100" alt="..." />
-                </div>
-                <div class="card-body">
-                  <div class="product-box-info">
-                    <div class="product-box-variable d-flex align-items-center justify-content-between">
-                      <div class="box-number-size">5 Size</div>
-                      <div class="box-number-color">1 Màu sắc</div>
-                    </div>
-                    <div class="product-box-title">
-                      <h4>
-                        <a href="/products/giay-the-thao-nu-biti-s-hunter-x-dune-4-nguyen-to-lua-hsw004204">[Tặng Áo
-                          Thun] Giày Thể Thao Nữ Biti’s Hunter X
-                          Dune - 4 Nguyên Tố: LỬA HSW004204</a>
-                      </h4>
-                    </div>
-                    <div class="product-box-price d-flex align-items-center">
-                      <div class="main-price">1,207,000 ₫</div>
-                    </div>
-                    <div class="product-swatch-loop d-flex flex-wrap align-items-center justify-content-center">
-                      <div class="w-100 swatch-loop-item d-flex align-items-center justify-content-center flex-wrap">
-                        <span data-color="Xám" style="
-                              background: url('//product.hstatic.net/1000230642/product/ti-s-hunter-core-checkmate-collection-hsw000100xam-xam-vjgf3-color-xam_8bd709bd84694181ba7c5d1336fa513a_thumb.jpg') !important;
-                              background-size: contain !important;
-                            "
-                          data-img="//product.hstatic.net/1000230642/product/ti-s-hunter-core-checkmate-collection-hsw000100xam-xam-vjgf3-color-xam_8bd709bd84694181ba7c5d1336fa513a_large.jpg"
-                          class="item-color"></span>
-                        <span data-color="Trắng" style="
-                              background: url('//product.hstatic.net/1000230642/product/-hunter-core-checkmate-collection-hsw000100trg-trang-6n7ik-color-trang_455b889049fd4143b38e292e0200776d_thumb.jpg') !important;
-                              background-size: contain !important;
-                            "
-                          data-img="//product.hstatic.net/1000230642/product/-hunter-core-checkmate-collection-hsw000100trg-trang-6n7ik-color-trang_455b889049fd4143b38e292e0200776d_large.jpg"
-                          class="item-color"></span>
-                        <span data-color="Đen" style="
-                              background: url('//product.hstatic.net/1000230642/product/tion-hsw000100den-den-fx9d4-color-den_f0efd0e8728748cb96bea2c21254c7ae_2d569d3844cf400eada24c2476529b8e_thumb.jpg') !important;
-                              background-size: contain !important;
-                            "
-                          data-img="//product.hstatic.net/1000230642/product/tion-hsw000100den-den-fx9d4-color-den_f0efd0e8728748cb96bea2c21254c7ae_2d569d3844cf400eada24c2476529b8e_large.jpg"
-                          class="item-color active"></span>
-                      </div>
-
-                      <div style="display: none" class="product-action">
-                        <button class="add-to-cart-loop">Mua ngay</button>
-                      </div>
-                    </div>
-                    <div
-                      data-test="Đỏ-https://product.hstatic.net/1000230642/product/hsw004204doo2_341abd5e49814f6cb81da04042ca68e1.jpg"
-                      class="product-swatch-loop d-flex flex-wrap align-items-center justify-content-center">
-                      <div style="display: none" class="product-action">
-                        <button class="add-to-cart-loop">Mua ngay</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="card">
-                <div class="product-favorite">
-                  <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="product-label">
-                  <div class="pro-new">Mới</div>
-                </div>
-                <div class="img-wrapper">
-                  <img src="./asset/img/Trang 3.jpg" class="d-block w-100" alt="..." />
-                </div>
-                <div class="card-body">
-                  <div class="product-box-info">
-                    <div class="product-box-variable d-flex align-items-center justify-content-between">
-                      <div class="box-number-size">5 Size</div>
-                      <div class="box-number-color">1 Màu sắc</div>
-                    </div>
-                    <div class="product-box-title">
-                      <h4>
-                        <a href="/products/giay-the-thao-nu-biti-s-hunter-x-dune-4-nguyen-to-lua-hsw004204">[Tặng Áo
-                          Thun] Giày Thể Thao Nữ Biti’s Hunter X
-                          Dune - 4 Nguyên Tố: LỬA HSW004204</a>
-                      </h4>
-                    </div>
-                    <div class="product-box-price d-flex align-items-center">
-                      <div class="main-price">1,207,000 ₫</div>
-                    </div>
-                    <div class="product-swatch-loop d-flex flex-wrap align-items-center justify-content-center">
-                      <div class="w-100 swatch-loop-item d-flex align-items-center justify-content-center flex-wrap">
-                        <span data-color="Xám" style="
-                              background: url('//product.hstatic.net/1000230642/product/ti-s-hunter-core-checkmate-collection-hsw000100xam-xam-vjgf3-color-xam_8bd709bd84694181ba7c5d1336fa513a_thumb.jpg') !important;
-                              background-size: contain !important;
-                            "
-                          data-img="//product.hstatic.net/1000230642/product/ti-s-hunter-core-checkmate-collection-hsw000100xam-xam-vjgf3-color-xam_8bd709bd84694181ba7c5d1336fa513a_large.jpg"
-                          class="item-color"></span>
-                        <span data-color="Trắng" style="
-                              background: url('//product.hstatic.net/1000230642/product/-hunter-core-checkmate-collection-hsw000100trg-trang-6n7ik-color-trang_455b889049fd4143b38e292e0200776d_thumb.jpg') !important;
-                              background-size: contain !important;
-                            "
-                          data-img="//product.hstatic.net/1000230642/product/-hunter-core-checkmate-collection-hsw000100trg-trang-6n7ik-color-trang_455b889049fd4143b38e292e0200776d_large.jpg"
-                          class="item-color"></span>
-                        <span data-color="Đen" style="
-                              background: url('//product.hstatic.net/1000230642/product/tion-hsw000100den-den-fx9d4-color-den_f0efd0e8728748cb96bea2c21254c7ae_2d569d3844cf400eada24c2476529b8e_thumb.jpg') !important;
-                              background-size: contain !important;
-                            "
-                          data-img="//product.hstatic.net/1000230642/product/tion-hsw000100den-den-fx9d4-color-den_f0efd0e8728748cb96bea2c21254c7ae_2d569d3844cf400eada24c2476529b8e_large.jpg"
-                          class="item-color active"></span>
-                      </div>
-
-                      <div style="display: none" class="product-action">
-                        <button class="add-to-cart-loop">Mua ngay</button>
-                      </div>
-                    </div>
-                    <div
-                      data-test="Đỏ-https://product.hstatic.net/1000230642/product/hsw004204doo2_341abd5e49814f6cb81da04042ca68e1.jpg"
-                      class="product-swatch-loop d-flex flex-wrap align-items-center justify-content-center">
-                      <div style="display: none" class="product-action">
-                        <button class="add-to-cart-loop">Mua ngay</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="card">
-                <div class="product-favorite">
-                  <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="product-label">
-                  <div class="pro-new">Mới</div>
-                </div>
-                <div class="img-wrapper">
-                  <img src="./asset/img/Trang 3.jpg" class="d-block w-100" alt="..." />
-                </div>
-                <div class="card-body">
-                  <div class="product-box-info">
-                    <div class="product-box-variable d-flex align-items-center justify-content-between">
-                      <div class="box-number-size">5 Size</div>
-                      <div class="box-number-color">1 Màu sắc</div>
-                    </div>
-                    <div class="product-box-title">
-                      <h4>
-                        <a href="/products/giay-the-thao-nu-biti-s-hunter-x-dune-4-nguyen-to-lua-hsw004204">[Tặng Áo
-                          Thun] Giày Thể Thao Nữ Biti’s Hunter X
-                          Dune - 4 Nguyên Tố: LỬA HSW004204</a>
-                      </h4>
-                    </div>
-                    <div class="product-box-price d-flex align-items-center">
-                      <div class="main-price">1,207,000 ₫</div>
-                    </div>
-                    <div class="product-swatch-loop d-flex flex-wrap align-items-center justify-content-center">
-                      <div class="w-100 swatch-loop-item d-flex align-items-center justify-content-center flex-wrap">
-                        <span data-color="Xám" style="
-                              background: url('//product.hstatic.net/1000230642/product/ti-s-hunter-core-checkmate-collection-hsw000100xam-xam-vjgf3-color-xam_8bd709bd84694181ba7c5d1336fa513a_thumb.jpg') !important;
-                              background-size: contain !important;
-                            "
-                          data-img="//product.hstatic.net/1000230642/product/ti-s-hunter-core-checkmate-collection-hsw000100xam-xam-vjgf3-color-xam_8bd709bd84694181ba7c5d1336fa513a_large.jpg"
-                          class="item-color"></span>
-                        <span data-color="Trắng" style="
-                              background: url('//product.hstatic.net/1000230642/product/-hunter-core-checkmate-collection-hsw000100trg-trang-6n7ik-color-trang_455b889049fd4143b38e292e0200776d_thumb.jpg') !important;
-                              background-size: contain !important;
-                            "
-                          data-img="//product.hstatic.net/1000230642/product/-hunter-core-checkmate-collection-hsw000100trg-trang-6n7ik-color-trang_455b889049fd4143b38e292e0200776d_large.jpg"
-                          class="item-color"></span>
-                        <span data-color="Đen" style="
-                              background: url('//product.hstatic.net/1000230642/product/tion-hsw000100den-den-fx9d4-color-den_f0efd0e8728748cb96bea2c21254c7ae_2d569d3844cf400eada24c2476529b8e_thumb.jpg') !important;
-                              background-size: contain !important;
-                            "
-                          data-img="//product.hstatic.net/1000230642/product/tion-hsw000100den-den-fx9d4-color-den_f0efd0e8728748cb96bea2c21254c7ae_2d569d3844cf400eada24c2476529b8e_large.jpg"
-                          class="item-color active"></span>
-                      </div>
-
-                      <div style="display: none" class="product-action">
-                        <button class="add-to-cart-loop">Mua ngay</button>
-                      </div>
-                    </div>
-                    <div
-                      data-test="Đỏ-https://product.hstatic.net/1000230642/product/hsw004204doo2_341abd5e49814f6cb81da04042ca68e1.jpg"
-                      class="product-swatch-loop d-flex flex-wrap align-items-center justify-content-center">
-                      <div style="display: none" class="product-action">
-                        <button class="add-to-cart-loop">Mua ngay</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="card">
-                <div class="product-favorite">
-                  <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="product-label">
-                  <div class="pro-new">Mới</div>
-                </div>
-                <div class="img-wrapper">
-                  <img src="./asset/img/Trang 3.jpg" class="d-block w-100" alt="..." />
-                </div>
-                <div class="card-body">
-                  <div class="product-box-info">
-                    <div class="product-box-variable d-flex align-items-center justify-content-between">
-                      <div class="box-number-size">5 Size</div>
-                      <div class="box-number-color">1 Màu sắc</div>
-                    </div>
-                    <div class="product-box-title">
-                      <h4>
-                        <a href="/products/giay-the-thao-nu-biti-s-hunter-x-dune-4-nguyen-to-lua-hsw004204">[Tặng Áo
-                          Thun] Giày Thể Thao Nữ Biti’s Hunter X
-                          Dune - 4 Nguyên Tố: LỬA HSW004204</a>
-                      </h4>
-                    </div>
-                    <div class="product-box-price d-flex align-items-center">
-                      <div class="main-price">1,207,000 ₫</div>
-                    </div>
-                    <div class="product-swatch-loop d-flex flex-wrap align-items-center justify-content-center">
-                      <div class="w-100 swatch-loop-item d-flex align-items-center justify-content-center flex-wrap">
-                        <span data-color="Xám" style="
-                              background: url('//product.hstatic.net/1000230642/product/ti-s-hunter-core-checkmate-collection-hsw000100xam-xam-vjgf3-color-xam_8bd709bd84694181ba7c5d1336fa513a_thumb.jpg') !important;
-                              background-size: contain !important;
-                            "
-                          data-img="//product.hstatic.net/1000230642/product/ti-s-hunter-core-checkmate-collection-hsw000100xam-xam-vjgf3-color-xam_8bd709bd84694181ba7c5d1336fa513a_large.jpg"
-                          class="item-color"></span>
-                        <span data-color="Trắng" style="
-                              background: url('//product.hstatic.net/1000230642/product/-hunter-core-checkmate-collection-hsw000100trg-trang-6n7ik-color-trang_455b889049fd4143b38e292e0200776d_thumb.jpg') !important;
-                              background-size: contain !important;
-                            "
-                          data-img="//product.hstatic.net/1000230642/product/-hunter-core-checkmate-collection-hsw000100trg-trang-6n7ik-color-trang_455b889049fd4143b38e292e0200776d_large.jpg"
-                          class="item-color"></span>
-                        <span data-color="Đen" style="
-                              background: url('//product.hstatic.net/1000230642/product/tion-hsw000100den-den-fx9d4-color-den_f0efd0e8728748cb96bea2c21254c7ae_2d569d3844cf400eada24c2476529b8e_thumb.jpg') !important;
-                              background-size: contain !important;
-                            "
-                          data-img="//product.hstatic.net/1000230642/product/tion-hsw000100den-den-fx9d4-color-den_f0efd0e8728748cb96bea2c21254c7ae_2d569d3844cf400eada24c2476529b8e_large.jpg"
-                          class="item-color active"></span>
-                      </div>
-
-                      <div style="display: none" class="product-action">
-                        <button class="add-to-cart-loop">Mua ngay</button>
-                      </div>
-                    </div>
-                    <div
-                      data-test="Đỏ-https://product.hstatic.net/1000230642/product/hsw004204doo2_341abd5e49814f6cb81da04042ca68e1.jpg"
-                      class="product-swatch-loop d-flex flex-wrap align-items-center justify-content-center">
-                      <div style="display: none" class="product-action">
-                        <button class="add-to-cart-loop">Mua ngay</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="card">
-                <div class="product-favorite">
-                  <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="product-label">
-                  <div class="pro-new">Mới</div>
-                </div>
-                <div class="img-wrapper">
-                  <img src="./asset/img/Trang 3.jpg" class="d-block w-100" alt="..." />
-                </div>
-                <div class="card-body">
-                  <div class="product-box-info">
-                    <div class="product-box-variable d-flex align-items-center justify-content-between">
-                      <div class="box-number-size">5 Size</div>
-                      <div class="box-number-color">1 Màu sắc</div>
-                    </div>
-                    <div class="product-box-title">
-                      <h4>
-                        <a href="/products/giay-the-thao-nu-biti-s-hunter-x-dune-4-nguyen-to-lua-hsw004204">[Tặng Áo
-                          Thun] Giày Thể Thao Nữ Biti’s Hunter X
-                          Dune - 4 Nguyên Tố: LỬA HSW004204</a>
-                      </h4>
-                    </div>
-                    <div class="product-box-price d-flex align-items-center">
-                      <div class="main-price">1,207,000 ₫</div>
-                    </div>
-                    <div class="product-swatch-loop d-flex flex-wrap align-items-center justify-content-center">
-                      <div class="w-100 swatch-loop-item d-flex align-items-center justify-content-center flex-wrap">
-                        <span data-color="Xám" style="
-                              background: url('//product.hstatic.net/1000230642/product/ti-s-hunter-core-checkmate-collection-hsw000100xam-xam-vjgf3-color-xam_8bd709bd84694181ba7c5d1336fa513a_thumb.jpg') !important;
-                              background-size: contain !important;
-                            "
-                          data-img="//product.hstatic.net/1000230642/product/ti-s-hunter-core-checkmate-collection-hsw000100xam-xam-vjgf3-color-xam_8bd709bd84694181ba7c5d1336fa513a_large.jpg"
-                          class="item-color"></span>
-                        <span data-color="Trắng" style="
-                              background: url('//product.hstatic.net/1000230642/product/-hunter-core-checkmate-collection-hsw000100trg-trang-6n7ik-color-trang_455b889049fd4143b38e292e0200776d_thumb.jpg') !important;
-                              background-size: contain !important;
-                            "
-                          data-img="//product.hstatic.net/1000230642/product/-hunter-core-checkmate-collection-hsw000100trg-trang-6n7ik-color-trang_455b889049fd4143b38e292e0200776d_large.jpg"
-                          class="item-color"></span>
-                        <span data-color="Đen" style="
-                              background: url('//product.hstatic.net/1000230642/product/tion-hsw000100den-den-fx9d4-color-den_f0efd0e8728748cb96bea2c21254c7ae_2d569d3844cf400eada24c2476529b8e_thumb.jpg') !important;
-                              background-size: contain !important;
-                            "
-                          data-img="//product.hstatic.net/1000230642/product/tion-hsw000100den-den-fx9d4-color-den_f0efd0e8728748cb96bea2c21254c7ae_2d569d3844cf400eada24c2476529b8e_large.jpg"
-                          class="item-color active"></span>
-                      </div>
-
-                      <div style="display: none" class="product-action">
-                        <button class="add-to-cart-loop">Mua ngay</button>
-                      </div>
-                    </div>
-                    <div
-                      data-test="Đỏ-https://product.hstatic.net/1000230642/product/hsw004204doo2_341abd5e49814f6cb81da04042ca68e1.jpg"
-                      class="product-swatch-loop d-flex flex-wrap align-items-center justify-content-center">
-                      <div style="display: none" class="product-action">
-                        <button class="add-to-cart-loop">Mua ngay</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev .prev-style" type="button" data-bs-target="#carouselProductControls"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next .next-style" type="button" data-bs-target="#carouselProductControls"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
-      <style></style>
-    </section>
-
-    
-  </div>
-
-  <!-- Đánh giá sản phẩm -->
-  <div class="product-rating review mt-4">
     <div class="container">
-      <div class="row">
-        <div class="col-12 col-lg-4">
-          <div class="review_summary">
-            <div class="review_summary__figure">
-              <div class="review_line__figure">
-                <strong>0</strong>/<span>5</span>
-              </div>
-              <div class="d-flex justify-content-center">
-                <div class="review_line__star d-none">
-                  <div class="review_background">
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                  </div>
-                  <div class="review_animation">
-                    <ul class="review_rated">
-                      <li class="fa fa-star"></li>
-                      <li class="fa fa-star"></li>
-                      <li class="fa fa-star"></li>
-                      <li class="fa fa-star"></li>
-                      <li class="fa fa-star"></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="review_line__total"></div>
-            </div>
-            <div class="review_summary__detail">
-              <div class="rv_summary__content">
-                <ul class="list_rate">
-                  <li class="rated_star__5">
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="line_sum__rate"></span>
-                  </li>
-                  <li class="rated_star__4">
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="line_sum__rate"></span>
-                  </li>
-                  <li class="rated_star__3">
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="line_sum__rate"></span>
-                  </li>
-                  <li class="rated_star__2">
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="line_sum__rate"></span>
-                  </li>
-                  <li class="rated_star__1">
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="line_sum__rate"></span>
-                  </li>
-                </ul>
-              </div>
-              <div class="count_rate">
-                <div class="count_rate_content" data-star="5">
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <div class="number_rate">0</div>
-                </div>
-                <div class="count_rate_content" data-star="4">
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <div class="number_rate">0</div>
-                </div>
-                <div class="count_rate_content" data-star="3">
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <div class="number_rate">0</div>
-                </div>
-                <div class="count_rate_content" data-star="2">
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <div class="number_rate">0</div>
-                </div>
-                <div class="count_rate_content" data-star="1">
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <div class="number_rate">0</div>
-                </div>
-              </div>
-            </div>
-            <button id="comment_review">Viết đánh giá</button>
+      <!-- Sản phẩm nổi bật -->
+      <section class="row productDetail-related">
+        <div class="col-md-12">
+          <div class="section-heading-tab d-flex align-items-center">
+            <h3>TOP SẢN PHẨM NỔI BẬT</h3>
           </div>
         </div>
-        <div class="col-12 col-lg-8">
-          <div class="review_header">
-            <div class="review_header-title">Đánh giá sản phẩm</div>
-            <div class="review_header-order">
-              <div class="review-order dropdown" id="review-sort">
-                <div type="button" id="sortMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                    id="Capa_1" x="0px" y="0px" viewBox="0 0 489.389 489.389"
-                    style="enable-background: new 0 0 489.389 489.389" xml:space="preserve">
-                    <g>
+        <div class="col-md-12">
+          <div id="carouselProductControls" class="carousel carousel-style">
+            <div class="carousel-inner">
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="product-favorite">
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <div class="product-label">
+                    <div class="pro-new">Mới</div>
+                  </div>
+                  <div class="img-wrapper">
+                    <img
+                      src="./asset/img/Trang 3.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <div class="product-box-info">
+                      <div
+                        class="product-box-variable d-flex align-items-center justify-content-between"
+                      >
+                        <div class="box-number-size">5 Size</div>
+                        <div class="box-number-color">1 Màu sắc</div>
+                      </div>
+                      <div class="product-box-title">
+                        <h4>
+                          <a
+                            href="/products/giay-the-thao-nu-biti-s-hunter-x-dune-4-nguyen-to-lua-hsw004204"
+                            >[Tặng Áo Thun] Giày Thể Thao Nữ Biti’s Hunter X
+                            Dune - 4 Nguyên Tố: LỬA HSW004204</a
+                          >
+                        </h4>
+                      </div>
+                      <div class="product-box-price d-flex align-items-center">
+                        <div class="main-price">1,207,000 ₫</div>
+                      </div>
+                      <div
+                        class="product-swatch-loop d-flex flex-wrap align-items-center justify-content-center"
+                      >
+                        <div
+                          class="w-100 swatch-loop-item d-flex align-items-center justify-content-center flex-wrap"
+                        >
+                          <span
+                            data-color="Xám"
+                            style="
+                              background: url('//product.hstatic.net/1000230642/product/ti-s-hunter-core-checkmate-collection-hsw000100xam-xam-vjgf3-color-xam_8bd709bd84694181ba7c5d1336fa513a_thumb.jpg') !important;
+                              background-size: contain !important;
+                            "
+                            data-img="//product.hstatic.net/1000230642/product/ti-s-hunter-core-checkmate-collection-hsw000100xam-xam-vjgf3-color-xam_8bd709bd84694181ba7c5d1336fa513a_large.jpg"
+                            class="item-color"
+                          ></span>
+                          <span
+                            data-color="Trắng"
+                            style="
+                              background: url('//product.hstatic.net/1000230642/product/-hunter-core-checkmate-collection-hsw000100trg-trang-6n7ik-color-trang_455b889049fd4143b38e292e0200776d_thumb.jpg') !important;
+                              background-size: contain !important;
+                            "
+                            data-img="//product.hstatic.net/1000230642/product/-hunter-core-checkmate-collection-hsw000100trg-trang-6n7ik-color-trang_455b889049fd4143b38e292e0200776d_large.jpg"
+                            class="item-color"
+                          ></span>
+                          <span
+                            data-color="Đen"
+                            style="
+                              background: url('//product.hstatic.net/1000230642/product/tion-hsw000100den-den-fx9d4-color-den_f0efd0e8728748cb96bea2c21254c7ae_2d569d3844cf400eada24c2476529b8e_thumb.jpg') !important;
+                              background-size: contain !important;
+                            "
+                            data-img="//product.hstatic.net/1000230642/product/tion-hsw000100den-den-fx9d4-color-den_f0efd0e8728748cb96bea2c21254c7ae_2d569d3844cf400eada24c2476529b8e_large.jpg"
+                            class="item-color active"
+                          ></span>
+                        </div>
+
+                        <div style="display: none" class="product-action">
+                          <button class="add-to-cart-loop">Mua ngay</button>
+                        </div>
+                      </div>
+                      <div
+                        data-test="Đỏ-https://product.hstatic.net/1000230642/product/hsw004204doo2_341abd5e49814f6cb81da04042ca68e1.jpg"
+                        class="product-swatch-loop d-flex flex-wrap align-items-center justify-content-center"
+                      >
+                        <div style="display: none" class="product-action">
+                          <button class="add-to-cart-loop">Mua ngay</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="product-favorite">
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <div class="product-label">
+                    <div class="pro-new">Mới</div>
+                  </div>
+                  <div class="img-wrapper">
+                    <img
+                      src="./asset/img/Trang 3.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <div class="product-box-info">
+                      <div
+                        class="product-box-variable d-flex align-items-center justify-content-between"
+                      >
+                        <div class="box-number-size">5 Size</div>
+                        <div class="box-number-color">1 Màu sắc</div>
+                      </div>
+                      <div class="product-box-title">
+                        <h4>
+                          <a
+                            href="/products/giay-the-thao-nu-biti-s-hunter-x-dune-4-nguyen-to-lua-hsw004204"
+                            >[Tặng Áo Thun] Giày Thể Thao Nữ Biti’s Hunter X
+                            Dune - 4 Nguyên Tố: LỬA HSW004204</a
+                          >
+                        </h4>
+                      </div>
+                      <div class="product-box-price d-flex align-items-center">
+                        <div class="main-price">1,207,000 ₫</div>
+                      </div>
+                      <div
+                        class="product-swatch-loop d-flex flex-wrap align-items-center justify-content-center"
+                      >
+                        <div
+                          class="w-100 swatch-loop-item d-flex align-items-center justify-content-center flex-wrap"
+                        >
+                          <span
+                            data-color="Xám"
+                            style="
+                              background: url('//product.hstatic.net/1000230642/product/ti-s-hunter-core-checkmate-collection-hsw000100xam-xam-vjgf3-color-xam_8bd709bd84694181ba7c5d1336fa513a_thumb.jpg') !important;
+                              background-size: contain !important;
+                            "
+                            data-img="//product.hstatic.net/1000230642/product/ti-s-hunter-core-checkmate-collection-hsw000100xam-xam-vjgf3-color-xam_8bd709bd84694181ba7c5d1336fa513a_large.jpg"
+                            class="item-color"
+                          ></span>
+                          <span
+                            data-color="Trắng"
+                            style="
+                              background: url('//product.hstatic.net/1000230642/product/-hunter-core-checkmate-collection-hsw000100trg-trang-6n7ik-color-trang_455b889049fd4143b38e292e0200776d_thumb.jpg') !important;
+                              background-size: contain !important;
+                            "
+                            data-img="//product.hstatic.net/1000230642/product/-hunter-core-checkmate-collection-hsw000100trg-trang-6n7ik-color-trang_455b889049fd4143b38e292e0200776d_large.jpg"
+                            class="item-color"
+                          ></span>
+                          <span
+                            data-color="Đen"
+                            style="
+                              background: url('//product.hstatic.net/1000230642/product/tion-hsw000100den-den-fx9d4-color-den_f0efd0e8728748cb96bea2c21254c7ae_2d569d3844cf400eada24c2476529b8e_thumb.jpg') !important;
+                              background-size: contain !important;
+                            "
+                            data-img="//product.hstatic.net/1000230642/product/tion-hsw000100den-den-fx9d4-color-den_f0efd0e8728748cb96bea2c21254c7ae_2d569d3844cf400eada24c2476529b8e_large.jpg"
+                            class="item-color active"
+                          ></span>
+                        </div>
+
+                        <div style="display: none" class="product-action">
+                          <button class="add-to-cart-loop">Mua ngay</button>
+                        </div>
+                      </div>
+                      <div
+                        data-test="Đỏ-https://product.hstatic.net/1000230642/product/hsw004204doo2_341abd5e49814f6cb81da04042ca68e1.jpg"
+                        class="product-swatch-loop d-flex flex-wrap align-items-center justify-content-center"
+                      >
+                        <div style="display: none" class="product-action">
+                          <button class="add-to-cart-loop">Mua ngay</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="product-favorite">
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <div class="product-label">
+                    <div class="pro-new">Mới</div>
+                  </div>
+                  <div class="img-wrapper">
+                    <img
+                      src="./asset/img/Trang 3.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <div class="product-box-info">
+                      <div
+                        class="product-box-variable d-flex align-items-center justify-content-between"
+                      >
+                        <div class="box-number-size">5 Size</div>
+                        <div class="box-number-color">1 Màu sắc</div>
+                      </div>
+                      <div class="product-box-title">
+                        <h4>
+                          <a
+                            href="/products/giay-the-thao-nu-biti-s-hunter-x-dune-4-nguyen-to-lua-hsw004204"
+                            >[Tặng Áo Thun] Giày Thể Thao Nữ Biti’s Hunter X
+                            Dune - 4 Nguyên Tố: LỬA HSW004204</a
+                          >
+                        </h4>
+                      </div>
+                      <div class="product-box-price d-flex align-items-center">
+                        <div class="main-price">1,207,000 ₫</div>
+                      </div>
+                      <div
+                        class="product-swatch-loop d-flex flex-wrap align-items-center justify-content-center"
+                      >
+                        <div
+                          class="w-100 swatch-loop-item d-flex align-items-center justify-content-center flex-wrap"
+                        >
+                          <span
+                            data-color="Xám"
+                            style="
+                              background: url('//product.hstatic.net/1000230642/product/ti-s-hunter-core-checkmate-collection-hsw000100xam-xam-vjgf3-color-xam_8bd709bd84694181ba7c5d1336fa513a_thumb.jpg') !important;
+                              background-size: contain !important;
+                            "
+                            data-img="//product.hstatic.net/1000230642/product/ti-s-hunter-core-checkmate-collection-hsw000100xam-xam-vjgf3-color-xam_8bd709bd84694181ba7c5d1336fa513a_large.jpg"
+                            class="item-color"
+                          ></span>
+                          <span
+                            data-color="Trắng"
+                            style="
+                              background: url('//product.hstatic.net/1000230642/product/-hunter-core-checkmate-collection-hsw000100trg-trang-6n7ik-color-trang_455b889049fd4143b38e292e0200776d_thumb.jpg') !important;
+                              background-size: contain !important;
+                            "
+                            data-img="//product.hstatic.net/1000230642/product/-hunter-core-checkmate-collection-hsw000100trg-trang-6n7ik-color-trang_455b889049fd4143b38e292e0200776d_large.jpg"
+                            class="item-color"
+                          ></span>
+                          <span
+                            data-color="Đen"
+                            style="
+                              background: url('//product.hstatic.net/1000230642/product/tion-hsw000100den-den-fx9d4-color-den_f0efd0e8728748cb96bea2c21254c7ae_2d569d3844cf400eada24c2476529b8e_thumb.jpg') !important;
+                              background-size: contain !important;
+                            "
+                            data-img="//product.hstatic.net/1000230642/product/tion-hsw000100den-den-fx9d4-color-den_f0efd0e8728748cb96bea2c21254c7ae_2d569d3844cf400eada24c2476529b8e_large.jpg"
+                            class="item-color active"
+                          ></span>
+                        </div>
+
+                        <div style="display: none" class="product-action">
+                          <button class="add-to-cart-loop">Mua ngay</button>
+                        </div>
+                      </div>
+                      <div
+                        data-test="Đỏ-https://product.hstatic.net/1000230642/product/hsw004204doo2_341abd5e49814f6cb81da04042ca68e1.jpg"
+                        class="product-swatch-loop d-flex flex-wrap align-items-center justify-content-center"
+                      >
+                        <div style="display: none" class="product-action">
+                          <button class="add-to-cart-loop">Mua ngay</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="product-favorite">
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <div class="product-label">
+                    <div class="pro-new">Mới</div>
+                  </div>
+                  <div class="img-wrapper">
+                    <img
+                      src="./asset/img/Trang 3.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <div class="product-box-info">
+                      <div
+                        class="product-box-variable d-flex align-items-center justify-content-between"
+                      >
+                        <div class="box-number-size">5 Size</div>
+                        <div class="box-number-color">1 Màu sắc</div>
+                      </div>
+                      <div class="product-box-title">
+                        <h4>
+                          <a
+                            href="/products/giay-the-thao-nu-biti-s-hunter-x-dune-4-nguyen-to-lua-hsw004204"
+                            >[Tặng Áo Thun] Giày Thể Thao Nữ Biti’s Hunter X
+                            Dune - 4 Nguyên Tố: LỬA HSW004204</a
+                          >
+                        </h4>
+                      </div>
+                      <div class="product-box-price d-flex align-items-center">
+                        <div class="main-price">1,207,000 ₫</div>
+                      </div>
+                      <div
+                        class="product-swatch-loop d-flex flex-wrap align-items-center justify-content-center"
+                      >
+                        <div
+                          class="w-100 swatch-loop-item d-flex align-items-center justify-content-center flex-wrap"
+                        >
+                          <span
+                            data-color="Xám"
+                            style="
+                              background: url('//product.hstatic.net/1000230642/product/ti-s-hunter-core-checkmate-collection-hsw000100xam-xam-vjgf3-color-xam_8bd709bd84694181ba7c5d1336fa513a_thumb.jpg') !important;
+                              background-size: contain !important;
+                            "
+                            data-img="//product.hstatic.net/1000230642/product/ti-s-hunter-core-checkmate-collection-hsw000100xam-xam-vjgf3-color-xam_8bd709bd84694181ba7c5d1336fa513a_large.jpg"
+                            class="item-color"
+                          ></span>
+                          <span
+                            data-color="Trắng"
+                            style="
+                              background: url('//product.hstatic.net/1000230642/product/-hunter-core-checkmate-collection-hsw000100trg-trang-6n7ik-color-trang_455b889049fd4143b38e292e0200776d_thumb.jpg') !important;
+                              background-size: contain !important;
+                            "
+                            data-img="//product.hstatic.net/1000230642/product/-hunter-core-checkmate-collection-hsw000100trg-trang-6n7ik-color-trang_455b889049fd4143b38e292e0200776d_large.jpg"
+                            class="item-color"
+                          ></span>
+                          <span
+                            data-color="Đen"
+                            style="
+                              background: url('//product.hstatic.net/1000230642/product/tion-hsw000100den-den-fx9d4-color-den_f0efd0e8728748cb96bea2c21254c7ae_2d569d3844cf400eada24c2476529b8e_thumb.jpg') !important;
+                              background-size: contain !important;
+                            "
+                            data-img="//product.hstatic.net/1000230642/product/tion-hsw000100den-den-fx9d4-color-den_f0efd0e8728748cb96bea2c21254c7ae_2d569d3844cf400eada24c2476529b8e_large.jpg"
+                            class="item-color active"
+                          ></span>
+                        </div>
+
+                        <div style="display: none" class="product-action">
+                          <button class="add-to-cart-loop">Mua ngay</button>
+                        </div>
+                      </div>
+                      <div
+                        data-test="Đỏ-https://product.hstatic.net/1000230642/product/hsw004204doo2_341abd5e49814f6cb81da04042ca68e1.jpg"
+                        class="product-swatch-loop d-flex flex-wrap align-items-center justify-content-center"
+                      >
+                        <div style="display: none" class="product-action">
+                          <button class="add-to-cart-loop">Mua ngay</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="product-favorite">
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <div class="product-label">
+                    <div class="pro-new">Mới</div>
+                  </div>
+                  <div class="img-wrapper">
+                    <img
+                      src="./asset/img/Trang 3.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <div class="product-box-info">
+                      <div
+                        class="product-box-variable d-flex align-items-center justify-content-between"
+                      >
+                        <div class="box-number-size">5 Size</div>
+                        <div class="box-number-color">1 Màu sắc</div>
+                      </div>
+                      <div class="product-box-title">
+                        <h4>
+                          <a
+                            href="/products/giay-the-thao-nu-biti-s-hunter-x-dune-4-nguyen-to-lua-hsw004204"
+                            >[Tặng Áo Thun] Giày Thể Thao Nữ Biti’s Hunter X
+                            Dune - 4 Nguyên Tố: LỬA HSW004204</a
+                          >
+                        </h4>
+                      </div>
+                      <div class="product-box-price d-flex align-items-center">
+                        <div class="main-price">1,207,000 ₫</div>
+                      </div>
+                      <div
+                        class="product-swatch-loop d-flex flex-wrap align-items-center justify-content-center"
+                      >
+                        <div
+                          class="w-100 swatch-loop-item d-flex align-items-center justify-content-center flex-wrap"
+                        >
+                          <span
+                            data-color="Xám"
+                            style="
+                              background: url('//product.hstatic.net/1000230642/product/ti-s-hunter-core-checkmate-collection-hsw000100xam-xam-vjgf3-color-xam_8bd709bd84694181ba7c5d1336fa513a_thumb.jpg') !important;
+                              background-size: contain !important;
+                            "
+                            data-img="//product.hstatic.net/1000230642/product/ti-s-hunter-core-checkmate-collection-hsw000100xam-xam-vjgf3-color-xam_8bd709bd84694181ba7c5d1336fa513a_large.jpg"
+                            class="item-color"
+                          ></span>
+                          <span
+                            data-color="Trắng"
+                            style="
+                              background: url('//product.hstatic.net/1000230642/product/-hunter-core-checkmate-collection-hsw000100trg-trang-6n7ik-color-trang_455b889049fd4143b38e292e0200776d_thumb.jpg') !important;
+                              background-size: contain !important;
+                            "
+                            data-img="//product.hstatic.net/1000230642/product/-hunter-core-checkmate-collection-hsw000100trg-trang-6n7ik-color-trang_455b889049fd4143b38e292e0200776d_large.jpg"
+                            class="item-color"
+                          ></span>
+                          <span
+                            data-color="Đen"
+                            style="
+                              background: url('//product.hstatic.net/1000230642/product/tion-hsw000100den-den-fx9d4-color-den_f0efd0e8728748cb96bea2c21254c7ae_2d569d3844cf400eada24c2476529b8e_thumb.jpg') !important;
+                              background-size: contain !important;
+                            "
+                            data-img="//product.hstatic.net/1000230642/product/tion-hsw000100den-den-fx9d4-color-den_f0efd0e8728748cb96bea2c21254c7ae_2d569d3844cf400eada24c2476529b8e_large.jpg"
+                            class="item-color active"
+                          ></span>
+                        </div>
+
+                        <div style="display: none" class="product-action">
+                          <button class="add-to-cart-loop">Mua ngay</button>
+                        </div>
+                      </div>
+                      <div
+                        data-test="Đỏ-https://product.hstatic.net/1000230642/product/hsw004204doo2_341abd5e49814f6cb81da04042ca68e1.jpg"
+                        class="product-swatch-loop d-flex flex-wrap align-items-center justify-content-center"
+                      >
+                        <div style="display: none" class="product-action">
+                          <button class="add-to-cart-loop">Mua ngay</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="product-favorite">
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <div class="product-label">
+                    <div class="pro-new">Mới</div>
+                  </div>
+                  <div class="img-wrapper">
+                    <img
+                      src="./asset/img/Trang 3.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <div class="product-box-info">
+                      <div
+                        class="product-box-variable d-flex align-items-center justify-content-between"
+                      >
+                        <div class="box-number-size">5 Size</div>
+                        <div class="box-number-color">1 Màu sắc</div>
+                      </div>
+                      <div class="product-box-title">
+                        <h4>
+                          <a
+                            href="/products/giay-the-thao-nu-biti-s-hunter-x-dune-4-nguyen-to-lua-hsw004204"
+                            >[Tặng Áo Thun] Giày Thể Thao Nữ Biti’s Hunter X
+                            Dune - 4 Nguyên Tố: LỬA HSW004204</a
+                          >
+                        </h4>
+                      </div>
+                      <div class="product-box-price d-flex align-items-center">
+                        <div class="main-price">1,207,000 ₫</div>
+                      </div>
+                      <div
+                        class="product-swatch-loop d-flex flex-wrap align-items-center justify-content-center"
+                      >
+                        <div
+                          class="w-100 swatch-loop-item d-flex align-items-center justify-content-center flex-wrap"
+                        >
+                          <span
+                            data-color="Xám"
+                            style="
+                              background: url('//product.hstatic.net/1000230642/product/ti-s-hunter-core-checkmate-collection-hsw000100xam-xam-vjgf3-color-xam_8bd709bd84694181ba7c5d1336fa513a_thumb.jpg') !important;
+                              background-size: contain !important;
+                            "
+                            data-img="//product.hstatic.net/1000230642/product/ti-s-hunter-core-checkmate-collection-hsw000100xam-xam-vjgf3-color-xam_8bd709bd84694181ba7c5d1336fa513a_large.jpg"
+                            class="item-color"
+                          ></span>
+                          <span
+                            data-color="Trắng"
+                            style="
+                              background: url('//product.hstatic.net/1000230642/product/-hunter-core-checkmate-collection-hsw000100trg-trang-6n7ik-color-trang_455b889049fd4143b38e292e0200776d_thumb.jpg') !important;
+                              background-size: contain !important;
+                            "
+                            data-img="//product.hstatic.net/1000230642/product/-hunter-core-checkmate-collection-hsw000100trg-trang-6n7ik-color-trang_455b889049fd4143b38e292e0200776d_large.jpg"
+                            class="item-color"
+                          ></span>
+                          <span
+                            data-color="Đen"
+                            style="
+                              background: url('//product.hstatic.net/1000230642/product/tion-hsw000100den-den-fx9d4-color-den_f0efd0e8728748cb96bea2c21254c7ae_2d569d3844cf400eada24c2476529b8e_thumb.jpg') !important;
+                              background-size: contain !important;
+                            "
+                            data-img="//product.hstatic.net/1000230642/product/tion-hsw000100den-den-fx9d4-color-den_f0efd0e8728748cb96bea2c21254c7ae_2d569d3844cf400eada24c2476529b8e_large.jpg"
+                            class="item-color active"
+                          ></span>
+                        </div>
+
+                        <div style="display: none" class="product-action">
+                          <button class="add-to-cart-loop">Mua ngay</button>
+                        </div>
+                      </div>
+                      <div
+                        data-test="Đỏ-https://product.hstatic.net/1000230642/product/hsw004204doo2_341abd5e49814f6cb81da04042ca68e1.jpg"
+                        class="product-swatch-loop d-flex flex-wrap align-items-center justify-content-center"
+                      >
+                        <div style="display: none" class="product-action">
+                          <button class="add-to-cart-loop">Mua ngay</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="product-favorite">
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <div class="product-label">
+                    <div class="pro-new">Mới</div>
+                  </div>
+                  <div class="img-wrapper">
+                    <img
+                      src="./asset/img/Trang 3.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <div class="product-box-info">
+                      <div
+                        class="product-box-variable d-flex align-items-center justify-content-between"
+                      >
+                        <div class="box-number-size">5 Size</div>
+                        <div class="box-number-color">1 Màu sắc</div>
+                      </div>
+                      <div class="product-box-title">
+                        <h4>
+                          <a
+                            href="/products/giay-the-thao-nu-biti-s-hunter-x-dune-4-nguyen-to-lua-hsw004204"
+                            >[Tặng Áo Thun] Giày Thể Thao Nữ Biti’s Hunter X
+                            Dune - 4 Nguyên Tố: LỬA HSW004204</a
+                          >
+                        </h4>
+                      </div>
+                      <div class="product-box-price d-flex align-items-center">
+                        <div class="main-price">1,207,000 ₫</div>
+                      </div>
+                      <div
+                        class="product-swatch-loop d-flex flex-wrap align-items-center justify-content-center"
+                      >
+                        <div
+                          class="w-100 swatch-loop-item d-flex align-items-center justify-content-center flex-wrap"
+                        >
+                          <span
+                            data-color="Xám"
+                            style="
+                              background: url('//product.hstatic.net/1000230642/product/ti-s-hunter-core-checkmate-collection-hsw000100xam-xam-vjgf3-color-xam_8bd709bd84694181ba7c5d1336fa513a_thumb.jpg') !important;
+                              background-size: contain !important;
+                            "
+                            data-img="//product.hstatic.net/1000230642/product/ti-s-hunter-core-checkmate-collection-hsw000100xam-xam-vjgf3-color-xam_8bd709bd84694181ba7c5d1336fa513a_large.jpg"
+                            class="item-color"
+                          ></span>
+                          <span
+                            data-color="Trắng"
+                            style="
+                              background: url('//product.hstatic.net/1000230642/product/-hunter-core-checkmate-collection-hsw000100trg-trang-6n7ik-color-trang_455b889049fd4143b38e292e0200776d_thumb.jpg') !important;
+                              background-size: contain !important;
+                            "
+                            data-img="//product.hstatic.net/1000230642/product/-hunter-core-checkmate-collection-hsw000100trg-trang-6n7ik-color-trang_455b889049fd4143b38e292e0200776d_large.jpg"
+                            class="item-color"
+                          ></span>
+                          <span
+                            data-color="Đen"
+                            style="
+                              background: url('//product.hstatic.net/1000230642/product/tion-hsw000100den-den-fx9d4-color-den_f0efd0e8728748cb96bea2c21254c7ae_2d569d3844cf400eada24c2476529b8e_thumb.jpg') !important;
+                              background-size: contain !important;
+                            "
+                            data-img="//product.hstatic.net/1000230642/product/tion-hsw000100den-den-fx9d4-color-den_f0efd0e8728748cb96bea2c21254c7ae_2d569d3844cf400eada24c2476529b8e_large.jpg"
+                            class="item-color active"
+                          ></span>
+                        </div>
+
+                        <div style="display: none" class="product-action">
+                          <button class="add-to-cart-loop">Mua ngay</button>
+                        </div>
+                      </div>
+                      <div
+                        data-test="Đỏ-https://product.hstatic.net/1000230642/product/hsw004204doo2_341abd5e49814f6cb81da04042ca68e1.jpg"
+                        class="product-swatch-loop d-flex flex-wrap align-items-center justify-content-center"
+                      >
+                        <div style="display: none" class="product-action">
+                          <button class="add-to-cart-loop">Mua ngay</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="product-favorite">
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <div class="product-label">
+                    <div class="pro-new">Mới</div>
+                  </div>
+                  <div class="img-wrapper">
+                    <img
+                      src="./asset/img/Trang 3.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <div class="product-box-info">
+                      <div
+                        class="product-box-variable d-flex align-items-center justify-content-between"
+                      >
+                        <div class="box-number-size">5 Size</div>
+                        <div class="box-number-color">1 Màu sắc</div>
+                      </div>
+                      <div class="product-box-title">
+                        <h4>
+                          <a
+                            href="/products/giay-the-thao-nu-biti-s-hunter-x-dune-4-nguyen-to-lua-hsw004204"
+                            >[Tặng Áo Thun] Giày Thể Thao Nữ Biti’s Hunter X
+                            Dune - 4 Nguyên Tố: LỬA HSW004204</a
+                          >
+                        </h4>
+                      </div>
+                      <div class="product-box-price d-flex align-items-center">
+                        <div class="main-price">1,207,000 ₫</div>
+                      </div>
+                      <div
+                        class="product-swatch-loop d-flex flex-wrap align-items-center justify-content-center"
+                      >
+                        <div
+                          class="w-100 swatch-loop-item d-flex align-items-center justify-content-center flex-wrap"
+                        >
+                          <span
+                            data-color="Xám"
+                            style="
+                              background: url('//product.hstatic.net/1000230642/product/ti-s-hunter-core-checkmate-collection-hsw000100xam-xam-vjgf3-color-xam_8bd709bd84694181ba7c5d1336fa513a_thumb.jpg') !important;
+                              background-size: contain !important;
+                            "
+                            data-img="//product.hstatic.net/1000230642/product/ti-s-hunter-core-checkmate-collection-hsw000100xam-xam-vjgf3-color-xam_8bd709bd84694181ba7c5d1336fa513a_large.jpg"
+                            class="item-color"
+                          ></span>
+                          <span
+                            data-color="Trắng"
+                            style="
+                              background: url('//product.hstatic.net/1000230642/product/-hunter-core-checkmate-collection-hsw000100trg-trang-6n7ik-color-trang_455b889049fd4143b38e292e0200776d_thumb.jpg') !important;
+                              background-size: contain !important;
+                            "
+                            data-img="//product.hstatic.net/1000230642/product/-hunter-core-checkmate-collection-hsw000100trg-trang-6n7ik-color-trang_455b889049fd4143b38e292e0200776d_large.jpg"
+                            class="item-color"
+                          ></span>
+                          <span
+                            data-color="Đen"
+                            style="
+                              background: url('//product.hstatic.net/1000230642/product/tion-hsw000100den-den-fx9d4-color-den_f0efd0e8728748cb96bea2c21254c7ae_2d569d3844cf400eada24c2476529b8e_thumb.jpg') !important;
+                              background-size: contain !important;
+                            "
+                            data-img="//product.hstatic.net/1000230642/product/tion-hsw000100den-den-fx9d4-color-den_f0efd0e8728748cb96bea2c21254c7ae_2d569d3844cf400eada24c2476529b8e_large.jpg"
+                            class="item-color active"
+                          ></span>
+                        </div>
+
+                        <div style="display: none" class="product-action">
+                          <button class="add-to-cart-loop">Mua ngay</button>
+                        </div>
+                      </div>
+                      <div
+                        data-test="Đỏ-https://product.hstatic.net/1000230642/product/hsw004204doo2_341abd5e49814f6cb81da04042ca68e1.jpg"
+                        class="product-swatch-loop d-flex flex-wrap align-items-center justify-content-center"
+                      >
+                        <div style="display: none" class="product-action">
+                          <button class="add-to-cart-loop">Mua ngay</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="product-favorite">
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <div class="product-label">
+                    <div class="pro-new">Mới</div>
+                  </div>
+                  <div class="img-wrapper">
+                    <img
+                      src="./asset/img/Trang 3.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="card-body">
+                    <div class="product-box-info">
+                      <div
+                        class="product-box-variable d-flex align-items-center justify-content-between"
+                      >
+                        <div class="box-number-size">5 Size</div>
+                        <div class="box-number-color">1 Màu sắc</div>
+                      </div>
+                      <div class="product-box-title">
+                        <h4>
+                          <a
+                            href="/products/giay-the-thao-nu-biti-s-hunter-x-dune-4-nguyen-to-lua-hsw004204"
+                            >[Tặng Áo Thun] Giày Thể Thao Nữ Biti’s Hunter X
+                            Dune - 4 Nguyên Tố: LỬA HSW004204</a
+                          >
+                        </h4>
+                      </div>
+                      <div class="product-box-price d-flex align-items-center">
+                        <div class="main-price">1,207,000 ₫</div>
+                      </div>
+                      <div
+                        class="product-swatch-loop d-flex flex-wrap align-items-center justify-content-center"
+                      >
+                        <div
+                          class="w-100 swatch-loop-item d-flex align-items-center justify-content-center flex-wrap"
+                        >
+                          <span
+                            data-color="Xám"
+                            style="
+                              background: url('//product.hstatic.net/1000230642/product/ti-s-hunter-core-checkmate-collection-hsw000100xam-xam-vjgf3-color-xam_8bd709bd84694181ba7c5d1336fa513a_thumb.jpg') !important;
+                              background-size: contain !important;
+                            "
+                            data-img="//product.hstatic.net/1000230642/product/ti-s-hunter-core-checkmate-collection-hsw000100xam-xam-vjgf3-color-xam_8bd709bd84694181ba7c5d1336fa513a_large.jpg"
+                            class="item-color"
+                          ></span>
+                          <span
+                            data-color="Trắng"
+                            style="
+                              background: url('//product.hstatic.net/1000230642/product/-hunter-core-checkmate-collection-hsw000100trg-trang-6n7ik-color-trang_455b889049fd4143b38e292e0200776d_thumb.jpg') !important;
+                              background-size: contain !important;
+                            "
+                            data-img="//product.hstatic.net/1000230642/product/-hunter-core-checkmate-collection-hsw000100trg-trang-6n7ik-color-trang_455b889049fd4143b38e292e0200776d_large.jpg"
+                            class="item-color"
+                          ></span>
+                          <span
+                            data-color="Đen"
+                            style="
+                              background: url('//product.hstatic.net/1000230642/product/tion-hsw000100den-den-fx9d4-color-den_f0efd0e8728748cb96bea2c21254c7ae_2d569d3844cf400eada24c2476529b8e_thumb.jpg') !important;
+                              background-size: contain !important;
+                            "
+                            data-img="//product.hstatic.net/1000230642/product/tion-hsw000100den-den-fx9d4-color-den_f0efd0e8728748cb96bea2c21254c7ae_2d569d3844cf400eada24c2476529b8e_large.jpg"
+                            class="item-color active"
+                          ></span>
+                        </div>
+
+                        <div style="display: none" class="product-action">
+                          <button class="add-to-cart-loop">Mua ngay</button>
+                        </div>
+                      </div>
+                      <div
+                        data-test="Đỏ-https://product.hstatic.net/1000230642/product/hsw004204doo2_341abd5e49814f6cb81da04042ca68e1.jpg"
+                        class="product-swatch-loop d-flex flex-wrap align-items-center justify-content-center"
+                      >
+                        <div style="display: none" class="product-action">
+                          <button class="add-to-cart-loop">Mua ngay</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev .prev-style"
+              type="button"
+              data-bs-target="#carouselProductControls"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next .next-style"
+              type="button"
+              data-bs-target="#carouselProductControls"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <style></style>
+      </section>
+    </div>
+
+    <!-- Đánh giá sản phẩm -->
+    <div class="product-rating review mt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-4">
+            <div class="review_summary">
+              <div class="review_summary__figure">
+                <div class="review_line__figure">
+                  <strong>0</strong>/<span>5</span>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <div class="review_line__star d-none">
+                    <div class="review_background">
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                    </div>
+                    <div class="review_animation">
+                      <ul class="review_rated">
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                        <li class="fa fa-star"></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="review_line__total"></div>
+              </div>
+              <div class="review_summary__detail">
+                <div class="rv_summary__content">
+                  <ul class="list_rate">
+                    <li class="rated_star__5">
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="line_sum__rate"></span>
+                    </li>
+                    <li class="rated_star__4">
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="line_sum__rate"></span>
+                    </li>
+                    <li class="rated_star__3">
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="line_sum__rate"></span>
+                    </li>
+                    <li class="rated_star__2">
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="line_sum__rate"></span>
+                    </li>
+                    <li class="rated_star__1">
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="line_sum__rate"></span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="count_rate">
+                  <div class="count_rate_content" data-star="5">
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="0"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <div class="number_rate">0</div>
+                  </div>
+                  <div class="count_rate_content" data-star="4">
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="0"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <div class="number_rate">0</div>
+                  </div>
+                  <div class="count_rate_content" data-star="3">
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="0"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <div class="number_rate">0</div>
+                  </div>
+                  <div class="count_rate_content" data-star="2">
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="0"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <div class="number_rate">0</div>
+                  </div>
+                  <div class="count_rate_content" data-star="1">
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="0"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <div class="number_rate">0</div>
+                  </div>
+                </div>
+              </div>
+              <button id="comment_review">Viết đánh giá</button>
+            </div>
+          </div>
+          <div class="col-12 col-lg-8">
+            <div class="review_header">
+              <div class="review_header-title">Đánh giá sản phẩm</div>
+              <div class="review_header-order">
+                <div class="review-order dropdown" id="review-sort">
+                  <div
+                    type="button"
+                    id="sortMenu"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="true"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      version="1.1"
+                      id="Capa_1"
+                      x="0px"
+                      y="0px"
+                      viewBox="0 0 489.389 489.389"
+                      style="enable-background: new 0 0 489.389 489.389"
+                      xml:space="preserve"
+                    >
                       <g>
-                        <path
-                          d="M261.294,326.102c-8.3-7.3-21.8-6.2-29.1,2.1l-77,86.8v-346.9c0-11.4-9.4-20.8-20.8-20.8s-20.8,9.4-20.8,20.8v346.9    l-77-86.8c-8.3-8.3-20.8-9.4-29.1-2.1c-8.3,8.3-9.4,20.8-2.1,29.1l113.4,126.9c8.5,10.5,23.5,8.9,30.2,0l114.4-126.9    C270.694,347.002,269.694,333.402,261.294,326.102z">
-                        </path>
-                        <path
-                          d="M483.994,134.702l-112.4-126.9c-10-10.1-22.5-10.7-31.2,0l-114.4,126.9c-7.3,8.3-6.2,21.8,2.1,29.1    c12.8,10.2,25.7,3.2,29.1-2.1l77-86.8v345.9c0,11.4,9.4,20.8,20.8,20.8s20.8-8.3,20.8-19.8v-346.8l77,86.8    c8.3,8.3,20.8,9.4,29.1,2.1C490.194,155.502,491.294,143.002,483.994,134.702z">
-                        </path>
+                        <g>
+                          <path
+                            d="M261.294,326.102c-8.3-7.3-21.8-6.2-29.1,2.1l-77,86.8v-346.9c0-11.4-9.4-20.8-20.8-20.8s-20.8,9.4-20.8,20.8v346.9    l-77-86.8c-8.3-8.3-20.8-9.4-29.1-2.1c-8.3,8.3-9.4,20.8-2.1,29.1l113.4,126.9c8.5,10.5,23.5,8.9,30.2,0l114.4-126.9    C270.694,347.002,269.694,333.402,261.294,326.102z"
+                          ></path>
+                          <path
+                            d="M483.994,134.702l-112.4-126.9c-10-10.1-22.5-10.7-31.2,0l-114.4,126.9c-7.3,8.3-6.2,21.8,2.1,29.1    c12.8,10.2,25.7,3.2,29.1-2.1l77-86.8v345.9c0,11.4,9.4,20.8,20.8,20.8s20.8-8.3,20.8-19.8v-346.8l77,86.8    c8.3,8.3,20.8,9.4,29.1,2.1C490.194,155.502,491.294,143.002,483.994,134.702z"
+                          ></path>
+                        </g>
                       </g>
-                    </g>
-                  </svg>
-                  <span>Sắp xếp: </span><span class="review-order-condition sort-condition" data-sort="0">
-                    Mới nhất</span>
+                    </svg>
+                    <span>Sắp xếp: </span
+                    ><span
+                      class="review-order-condition sort-condition"
+                      data-sort="0"
+                    >
+                      Mới nhất</span
+                    >
+                  </div>
+                  <ul
+                    class="dropdown-menu sort-drop"
+                    aria-labelledby="sortMenu"
+                  >
+                    <li class="sort-option" data-sort="0">Mới nhất</li>
+                    <li class="sort-option" data-sort="1">Cũ nhất</li>
+                    <li class="sort-option special" data-sort="2">
+                      Đánh giá: cao - thấp
+                    </li>
+                    <li class="sort-option special" data-sort="3">
+                      Đánh giá: thấp - cao
+                    </li>
+                  </ul>
                 </div>
-                <ul class="dropdown-menu sort-drop" aria-labelledby="sortMenu">
-                  <li class="sort-option" data-sort="0">Mới nhất</li>
-                  <li class="sort-option" data-sort="1">Cũ nhất</li>
-                  <li class="sort-option special" data-sort="2">
-                    Đánh giá: cao - thấp
-                  </li>
-                  <li class="sort-option special" data-sort="3">
-                    Đánh giá: thấp - cao
-                  </li>
-                </ul>
-              </div>
 
-              <div class="review-order dropdown" id="review-filter">
-                <div type="button" id="filterMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" width="20" height="40" viewBox="0 0 58 65"
-                    version="1.1">
-                    <!-- Generator: Sketch 3.0.3 (7891) - http://www.bohemiancoding.com/sketch -->
-                    <title>Filter</title>
-                    <desc>Created with Sketch.</desc>
-                    <defs></defs>
-                    <g id="Page-1" stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd" sketch:type="MSPage">
-                      <g id="Filter" sketch:type="MSLayerGroup" transform="translate(1.000000, 1.000000)"
-                        stroke="#6B6C6E" stroke-width="2">
-                        <path
-                          d="M54,0 L2,0 C0.9,0 0,0.9 0,2 L21,33 C21,33.7 21.4,34.4 22,34.7 L22,62 L34,55 L34,34.7 C34.6,34.4 35,33.7 35,33 L56,2 C56,0.9 55.1,0 54,0 L54,0 Z"
-                          id="Shape" sketch:type="MSShapeGroup"></path>
-                        <path d="M7,4 L23,28" id="Shape" sketch:type="MSShapeGroup"></path>
+                <div class="review-order dropdown" id="review-filter">
+                  <div
+                    type="button"
+                    id="filterMenu"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="true"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+                      width="20"
+                      height="40"
+                      viewBox="0 0 58 65"
+                      version="1.1"
+                    >
+                      <!-- Generator: Sketch 3.0.3 (7891) - http://www.bohemiancoding.com/sketch -->
+                      <title>Filter</title>
+                      <desc>Created with Sketch.</desc>
+                      <defs></defs>
+                      <g
+                        id="Page-1"
+                        stroke="none"
+                        stroke-width="1"
+                        fill="#fff"
+                        fill-rule="evenodd"
+                        sketch:type="MSPage"
+                      >
+                        <g
+                          id="Filter"
+                          sketch:type="MSLayerGroup"
+                          transform="translate(1.000000, 1.000000)"
+                          stroke="#6B6C6E"
+                          stroke-width="2"
+                        >
+                          <path
+                            d="M54,0 L2,0 C0.9,0 0,0.9 0,2 L21,33 C21,33.7 21.4,34.4 22,34.7 L22,62 L34,55 L34,34.7 C34.6,34.4 35,33.7 35,33 L56,2 C56,0.9 55.1,0 54,0 L54,0 Z"
+                            id="Shape"
+                            sketch:type="MSShapeGroup"
+                          ></path>
+                          <path
+                            d="M7,4 L23,28"
+                            id="Shape"
+                            sketch:type="MSShapeGroup"
+                          ></path>
+                        </g>
                       </g>
-                    </g>
-                  </svg>
-                  <span>Lọc: </span><span class="review-order-condition filter-condition" data-filter="0">
-                    Tất cả</span>
+                    </svg>
+                    <span>Lọc: </span
+                    ><span
+                      class="review-order-condition filter-condition"
+                      data-filter="0"
+                    >
+                      Tất cả</span
+                    >
+                  </div>
+                  <ul
+                    class="dropdown-menu filter-drop dropdown-menu-right"
+                    aria-labelledby="filterMenu"
+                  >
+                    <li class="filter-option" data-filter="0">Tất cả sao</li>
+                    <li class="filter-option" data-filter="1">1 sao</li>
+                    <li class="filter-option" data-filter="2">2 sao</li>
+                    <li class="filter-option" data-filter="3">3 sao</li>
+                    <li class="filter-option" data-filter="4">4 sao</li>
+                    <li class="filter-option" data-filter="5">5 sao</li>
+                  </ul>
                 </div>
-                <ul class="dropdown-menu filter-drop dropdown-menu-right" aria-labelledby="filterMenu">
-                  <li class="filter-option" data-filter="0">Tất cả sao</li>
-                  <li class="filter-option" data-filter="1">1 sao</li>
-                  <li class="filter-option" data-filter="2">2 sao</li>
-                  <li class="filter-option" data-filter="3">3 sao</li>
-                  <li class="filter-option" data-filter="4">4 sao</li>
-                  <li class="filter-option" data-filter="5">5 sao</li>
-                </ul>
               </div>
             </div>
+            <div class="review_comments no-data">
+              Sản phẩm chưa có đánh giá!
+            </div>
+            <div class="review_paginate"></div>
           </div>
-          <div class="review_comments no-data">
-            Sản phẩm chưa có đánh giá!
+        </div>
+      </div>
+    </div>
+
+    <!-- Banner giới thiệu -->
+    <section class="section-footer-gallery">
+      <div class="wraplist-container-gallery">
+        <div class="rowFlex-gallery">
+          <div class="gallery-item">
+            <a
+              class="groupbanner-hover"
+              href=""
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                class="dt-width-100 lazyload bigloaded"
+                width="320"
+                height="320"
+                alt="Gallery 1"
+                src="https://file.hstatic.net/200000522597/file/240x240_1_fcccf4c902ec4c5dbffb267d55480361.jpg"
+                data-src="https://file.hstatic.net/200000522597/file/240x240_1_fcccf4c902ec4c5dbffb267d55480361.jpg"
+                data-mobile="https://file.hstatic.net/200000522597/file/190x190_1_32833865eff5442981c31ef117857c4c.jpg"
+              />
+            </a>
           </div>
-          <div class="review_paginate"></div>
+
+          <div class="gallery-item">
+            <a
+              class="groupbanner-hover"
+              href="https://bitis.com.vn/collections/giay-da-banh"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                class="dt-width-100 lazyload bigloaded"
+                width="320"
+                height="320"
+                alt="Gallery 2"
+                src="https://file.hstatic.net/200000522597/file/240x240_2_eb3aab14e3c4460598b186581e14319c.jpg"
+                data-src="https://file.hstatic.net/200000522597/file/240x240_2_eb3aab14e3c4460598b186581e14319c.jpg"
+                data-mobile="https://file.hstatic.net/200000522597/file/190x190_2_e07d2f76e50349e1a5158638b6961a43.jpg"
+              />
+            </a>
+          </div>
+
+          <div class="gallery-item">
+            <a
+              class="groupbanner-hover"
+              href=""
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                class="dt-width-100 lazyload bigloaded"
+                width="320"
+                height="320"
+                alt="Gallery 3"
+                src="https://file.hstatic.net/200000522597/file/240x240_3_4ea1528b7b6c4b768edca82c5177b63f.jpg"
+                data-src="https://file.hstatic.net/200000522597/file/240x240_3_4ea1528b7b6c4b768edca82c5177b63f.jpg"
+                data-mobile="https://file.hstatic.net/200000522597/file/190x190_3_74fc5103219d4d76b87852f0d69b52d0.jpg"
+              />
+            </a>
+          </div>
+
+          <div class="gallery-item">
+            <a
+              class="groupbanner-hover"
+              href=""
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                class="dt-width-100 lazyload bigloaded"
+                width="320"
+                height="320"
+                alt="Gallery 4"
+                src="https://file.hstatic.net/200000522597/file/240x240_4_eff4b4e0d3e5496790737063aefc92d5.jpg"
+                data-src="https://file.hstatic.net/200000522597/file/240x240_4_eff4b4e0d3e5496790737063aefc92d5.jpg"
+                data-mobile="https://file.hstatic.net/200000522597/file/190x190_4_585bf2e917d24ccba7ae45d3d510cfb9.jpg"
+              />
+            </a>
+          </div>
+
+          <div class="gallery-item">
+            <a
+              class="groupbanner-hover"
+              href=""
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                class="dt-width-100 lazyload bigloaded"
+                width="320"
+                height="320"
+                alt="Gallery 5"
+                src="https://file.hstatic.net/200000522597/file/240x240_5_796788d0cc3c4cb8becdd4095b9657ec.jpg"
+                data-src="https://file.hstatic.net/200000522597/file/240x240_5_796788d0cc3c4cb8becdd4095b9657ec.jpg"
+                data-mobile="https://file.hstatic.net/200000522597/file/190x190_5_ca8ffe4ffb7d4d529606dfb6e2e24105.jpg"
+              />
+            </a>
+          </div>
+
+          <div class="gallery-item">
+            <a
+              class="groupbanner-hover"
+              href="https://bitis.com.vn/products/giay-bong-da-nam-biti-s-hunter-football-futsal-dsmh09100trg-trang"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                class="dt-width-100 lazyload bigloaded"
+                width="320"
+                height="320"
+                alt="Gallery 6"
+                src="https://file.hstatic.net/200000522597/file/240x240_6_cbc7d744bbad464393bbf3b378eb17e0.jpg"
+                data-src="https://file.hstatic.net/200000522597/file/240x240_6_cbc7d744bbad464393bbf3b378eb17e0.jpg"
+                data-mobile="https://file.hstatic.net/200000522597/file/190x190_6_6d70c989db00416f9a36240a13c4c253.jpg"
+              />
+            </a>
+          </div>
+
+          <div class="gallery-item">
+            <a
+              class="groupbanner-hover"
+              href="https://bitis.com.vn/collections/hunter-x-liteplex"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                class="dt-width-100 lazyload bigloaded"
+                width="320"
+                height="320"
+                alt="Gallery 7"
+                src="https://file.hstatic.net/200000522597/file/240x240_7_c8ce843f94c74e0e8e8aa51372ddf97b.jpg"
+                data-src="https://file.hstatic.net/200000522597/file/240x240_7_c8ce843f94c74e0e8e8aa51372ddf97b.jpg"
+                data-mobile="https://file.hstatic.net/200000522597/file/190x190_7_175222ef2ca6430eaf7e299c6b1fba2a.jpg"
+              />
+            </a>
+          </div>
+
+          <div class="gallery-item">
+            <a
+              class="groupbanner-hover"
+              href="https://bitis.com.vn/products/sandal-da-that-gosto-sparkle-curve-gfw018288den-den"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                class="dt-width-100 lazyload bigloaded"
+                width="320"
+                height="320"
+                alt="Gallery 8"
+                src="https://file.hstatic.net/200000522597/file/240x240_8_bfbc1f9a56f24921979f053befbb7d67.jpg"
+                data-src="https://file.hstatic.net/200000522597/file/240x240_8_bfbc1f9a56f24921979f053befbb7d67.jpg"
+                data-mobile="https://file.hstatic.net/200000522597/file/190x190_8_4a95e039257f4ec4be1bacf5a78eb476.jpg"
+              />
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-
-  <!-- Banner giới thiệu -->
-  <section class="section-footer-gallery">
-    <div class="wraplist-container-gallery">
-      <div class="rowFlex-gallery">
-        <div class="gallery-item">
-          <a class="groupbanner-hover" href="" target="_blank" rel="noreferrer">
-            <img class="dt-width-100 lazyload bigloaded" width="320" height="320" alt="Gallery 1"
-              src="https://file.hstatic.net/200000522597/file/240x240_1_fcccf4c902ec4c5dbffb267d55480361.jpg"
-              data-src="https://file.hstatic.net/200000522597/file/240x240_1_fcccf4c902ec4c5dbffb267d55480361.jpg"
-              data-mobile="https://file.hstatic.net/200000522597/file/190x190_1_32833865eff5442981c31ef117857c4c.jpg" />
-          </a>
+    </section>
+    <!-- Footer -->
+    <footer class="container-fluid" id="footer">
+      <div class="row pt-3 pb-3 bg-light dk pt-5 px-5">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <h4>Đăng kí nhận bản tin</h4>
+          <p>Đừng bỏ lỡ hàng ngàn sản phẩm và chương trình siêu hấp dẫn</p>
         </div>
-
-        <div class="gallery-item">
-          <a class="groupbanner-hover" href="https://bitis.com.vn/collections/giay-da-banh" target="_blank"
-            rel="noreferrer">
-            <img class="dt-width-100 lazyload bigloaded" width="320" height="320" alt="Gallery 2"
-              src="https://file.hstatic.net/200000522597/file/240x240_2_eb3aab14e3c4460598b186581e14319c.jpg"
-              data-src="https://file.hstatic.net/200000522597/file/240x240_2_eb3aab14e3c4460598b186581e14319c.jpg"
-              data-mobile="https://file.hstatic.net/200000522597/file/190x190_2_e07d2f76e50349e1a5158638b6961a43.jpg" />
-          </a>
+        <div class="col-lg-4 col-md-10 col-sm-9">
+          <div class="form-group">
+            <input
+              class="form-control"
+              type="text"
+              placeholder="Địa chỉ email của bạn"
+            />
+          </div>
         </div>
-
-        <div class="gallery-item">
-          <a class="groupbanner-hover" href="" target="_blank" rel="noreferrer">
-            <img class="dt-width-100 lazyload bigloaded" width="320" height="320" alt="Gallery 3"
-              src="https://file.hstatic.net/200000522597/file/240x240_3_4ea1528b7b6c4b768edca82c5177b63f.jpg"
-              data-src="https://file.hstatic.net/200000522597/file/240x240_3_4ea1528b7b6c4b768edca82c5177b63f.jpg"
-              data-mobile="https://file.hstatic.net/200000522597/file/190x190_3_74fc5103219d4d76b87852f0d69b52d0.jpg" />
-          </a>
-        </div>
-
-        <div class="gallery-item">
-          <a class="groupbanner-hover" href="" target="_blank" rel="noreferrer">
-            <img class="dt-width-100 lazyload bigloaded" width="320" height="320" alt="Gallery 4"
-              src="https://file.hstatic.net/200000522597/file/240x240_4_eff4b4e0d3e5496790737063aefc92d5.jpg"
-              data-src="https://file.hstatic.net/200000522597/file/240x240_4_eff4b4e0d3e5496790737063aefc92d5.jpg"
-              data-mobile="https://file.hstatic.net/200000522597/file/190x190_4_585bf2e917d24ccba7ae45d3d510cfb9.jpg" />
-          </a>
-        </div>
-
-        <div class="gallery-item">
-          <a class="groupbanner-hover" href="" target="_blank" rel="noreferrer">
-            <img class="dt-width-100 lazyload bigloaded" width="320" height="320" alt="Gallery 5"
-              src="https://file.hstatic.net/200000522597/file/240x240_5_796788d0cc3c4cb8becdd4095b9657ec.jpg"
-              data-src="https://file.hstatic.net/200000522597/file/240x240_5_796788d0cc3c4cb8becdd4095b9657ec.jpg"
-              data-mobile="https://file.hstatic.net/200000522597/file/190x190_5_ca8ffe4ffb7d4d529606dfb6e2e24105.jpg" />
-          </a>
-        </div>
-
-        <div class="gallery-item">
-          <a class="groupbanner-hover"
-            href="https://bitis.com.vn/products/giay-bong-da-nam-biti-s-hunter-football-futsal-dsmh09100trg-trang"
-            target="_blank" rel="noreferrer">
-            <img class="dt-width-100 lazyload bigloaded" width="320" height="320" alt="Gallery 6"
-              src="https://file.hstatic.net/200000522597/file/240x240_6_cbc7d744bbad464393bbf3b378eb17e0.jpg"
-              data-src="https://file.hstatic.net/200000522597/file/240x240_6_cbc7d744bbad464393bbf3b378eb17e0.jpg"
-              data-mobile="https://file.hstatic.net/200000522597/file/190x190_6_6d70c989db00416f9a36240a13c4c253.jpg" />
-          </a>
-        </div>
-
-        <div class="gallery-item">
-          <a class="groupbanner-hover" href="https://bitis.com.vn/collections/hunter-x-liteplex" target="_blank"
-            rel="noreferrer">
-            <img class="dt-width-100 lazyload bigloaded" width="320" height="320" alt="Gallery 7"
-              src="https://file.hstatic.net/200000522597/file/240x240_7_c8ce843f94c74e0e8e8aa51372ddf97b.jpg"
-              data-src="https://file.hstatic.net/200000522597/file/240x240_7_c8ce843f94c74e0e8e8aa51372ddf97b.jpg"
-              data-mobile="https://file.hstatic.net/200000522597/file/190x190_7_175222ef2ca6430eaf7e299c6b1fba2a.jpg" />
-          </a>
-        </div>
-
-        <div class="gallery-item">
-          <a class="groupbanner-hover"
-            href="https://bitis.com.vn/products/sandal-da-that-gosto-sparkle-curve-gfw018288den-den" target="_blank"
-            rel="noreferrer">
-            <img class="dt-width-100 lazyload bigloaded" width="320" height="320" alt="Gallery 8"
-              src="https://file.hstatic.net/200000522597/file/240x240_8_bfbc1f9a56f24921979f053befbb7d67.jpg"
-              data-src="https://file.hstatic.net/200000522597/file/240x240_8_bfbc1f9a56f24921979f053befbb7d67.jpg"
-              data-mobile="https://file.hstatic.net/200000522597/file/190x190_8_4a95e039257f4ec4be1bacf5a78eb476.jpg" />
-          </a>
+        <div class="col-lg-2 col-md-2 col-sm-3">
+          <button class="btn btn-primary">Đăng Ký</button>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- Footer -->
-  <footer class="container-fluid" id="footer">
-    <div class="row pt-3 pb-3 bg-light dk pt-5 px-5">
-      <div class="col-lg-6 col-md-12 col-sm-12">
-        <h4>Đăng kí nhận bản tin</h4>
-        <p>Đừng bỏ lỡ hàng ngàn sản phẩm và chương trình siêu hấp dẫn</p>
-      </div>
-      <div class="col-lg-4 col-md-10 col-sm-9">
-        <div class="form-group">
-          <input class="form-control" type="text" placeholder="Địa chỉ email của bạn" />
+      <div class="row mt-3 m2 px-5">
+        <div class="ft col-lg-3 col-md-6 col-sm-6 col-12">
+          <p>DANH MỤC SẢN PHẨM</p>
+          <p><a href="">Adidas</a></p>
+          <p><a href="">Air</a></p>
+          <p><a href="">OFF WHITE</a></p>
+          <p><a href="">FILA</a></p>
+          <p><a href="">Nike</a></p>
+          <p><a href="">Converse</a></p>
+        </div>
+        <div class="ft col-lg-3 col-md-6 col-sm-6 col-12">
+          <p>HỖ TRỢ KHÁCH HÀNG</p>
+          <p><a href="">Các câu hỏi thường gặp</a></p>
+          <p><a href="">Gửi yêu cầu hỗ trợ </a></p>
+          <p><a href="">Hướng dẫn đặt hàng</a></p>
+          <p><a href="">Phương thức vận chuyển</a></p>
+          <p><a href="">Chính sách đổi trả</a></p>
+          <p><a href="">Chính sách hàng nhập khẩu</a></p>
+          <p><a href="">Báo lỗi bảo mật</a></p>
+        </div>
+        <div class="ft col-lg-3 col-md-6 col-sm-12 col-12">
+          <p>NEW</p>
+          <p><a href="#">Cửa Hàng</a></p>
+          <p><a href="#">Về Chúng Tôi</a></p>
+        </div>
+        <div class="ft col-lg-3 col-md-6 col-sm-12 pttt col-12">
+          <p>PHƯƠNG THỨC THANH TOÁN</p>
+          <img src="./asset/img/visa.svg" alt="" />
+          <img src="./asset/img/mastercard.svg" alt="" />
+          <img src="./asset/img/jcb.svg" alt="" />
+
+          <img src="./asset/img/cash.svg" alt="" />
+          <img src="./asset/img/internet-banking.svg" alt="" />
+          <img src="./asset/img/installment.svg" alt="" />
         </div>
       </div>
-      <div class="col-lg-2 col-md-2 col-sm-3">
-        <button class="btn btn-primary">Đăng Ký</button>
-      </div>
-    </div>
-    <div class="row mt-3 m2 px-5">
-      <div class="ft col-lg-3 col-md-6 col-sm-6 col-12">
-        <p>DANH MỤC SẢN PHẨM</p>
-        <p><a href="">Adidas</a></p>
-        <p><a href="">Air</a></p>
-        <p><a href="">OFF WHITE</a></p>
-        <p><a href="">FILA</a></p>
-        <p><a href="">Nike</a></p>
-        <p><a href="">Converse</a></p>
-      </div>
-      <div class="ft col-lg-3 col-md-6 col-sm-6 col-12">
-        <p>HỖ TRỢ KHÁCH HÀNG</p>
-        <p><a href="">Các câu hỏi thường gặp</a></p>
-        <p><a href="">Gửi yêu cầu hỗ trợ </a></p>
-        <p><a href="">Hướng dẫn đặt hàng</a></p>
-        <p><a href="">Phương thức vận chuyển</a></p>
-        <p><a href="">Chính sách đổi trả</a></p>
-        <p><a href="">Chính sách hàng nhập khẩu</a></p>
-        <p><a href="">Báo lỗi bảo mật</a></p>
-      </div>
-      <div class="ft col-lg-3 col-md-6 col-sm-12 col-12">
-        <p>NEW</p>
-        <p><a href="#">Cửa Hàng</a></p>
-        <p><a href="#">Về Chúng Tôi</a></p>
-      </div>
-      <div class="ft col-lg-3 col-md-6 col-sm-12 pttt col-12">
-        <p>PHƯƠNG THỨC THANH TOÁN</p>
-        <img src="./asset/img/visa.svg" alt="" />
-        <img src="./asset/img/mastercard.svg" alt="" />
-        <img src="./asset/img/jcb.svg" alt="" />
+    </footer>
 
-        <img src="./asset/img/cash.svg" alt="" />
-        <img src="./asset/img/internet-banking.svg" alt="" />
-        <img src="./asset/img/installment.svg" alt="" />
-      </div>
-    </div>
-  </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-    crossorigin="anonymous"></script>
-
-  <!-- Carousel -->
-  <script>
-    var multipleCardCarousel = document.querySelector(
-      "#carouselProductControls"
-    );
-    if (window.matchMedia("(min-width: 768px)").matches) {
-      var carousel = new bootstrap.Carousel(multipleCardCarousel, {
-        interval: false,
-      });
-      var carouselWidth = $(".carousel-inner")[0].scrollWidth;
-      var cardWidth = $(".carousel-item").width();
-      var scrollPosition = 0;
-      $("#carouselProductControls .carousel-control-next").on(
-        "click",
-        function () {
-          if (scrollPosition < carouselWidth - cardWidth * 4) {
-            scrollPosition += cardWidth;
-            $("#carouselProductControls .carousel-inner").animate(
-              { scrollLeft: scrollPosition },
-              600
-            );
-          }
-        }
+    <!-- Carousel -->
+    <script>
+      var multipleCardCarousel = document.querySelector(
+        "#carouselProductControls"
       );
-      $("#carouselProductControls .carousel-control-prev").on(
-        "click",
-        function () {
-          if (scrollPosition > 0) {
-            scrollPosition -= cardWidth;
-            $("#carouselProductControls .carousel-inner").animate(
-              { scrollLeft: scrollPosition },
-              600
-            );
+      if (window.matchMedia("(min-width: 768px)").matches) {
+        var carousel = new bootstrap.Carousel(multipleCardCarousel, {
+          interval: false,
+        });
+        var carouselWidth = $(".carousel-inner")[0].scrollWidth;
+        var cardWidth = $(".carousel-item").width();
+        var scrollPosition = 0;
+        $("#carouselProductControls .carousel-control-next").on(
+          "click",
+          function () {
+            if (scrollPosition < carouselWidth - cardWidth * 4) {
+              scrollPosition += cardWidth;
+              $("#carouselProductControls .carousel-inner").animate(
+                { scrollLeft: scrollPosition },
+                600
+              );
+            }
           }
-        }
-      );
-    } else {
-      $(multipleCardCarousel).addClass("slide");
-    }
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js"
-    integrity="sha512-NQfB/bDaB8kaSXF8E77JjhHG5PM6XVRxvHzkZiwl3ddWCEPBa23T76MuWSwAJdMGJnmQqM0VeY9kFszsrBEFrQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="./js/index.js"></script>
-</body>
-
+        );
+        $("#carouselProductControls .carousel-control-prev").on(
+          "click",
+          function () {
+            if (scrollPosition > 0) {
+              scrollPosition -= cardWidth;
+              $("#carouselProductControls .carousel-inner").animate(
+                { scrollLeft: scrollPosition },
+                600
+              );
+            }
+          }
+        );
+      } else {
+        $(multipleCardCarousel).addClass("slide");
+      }
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js"
+      integrity="sha512-NQfB/bDaB8kaSXF8E77JjhHG5PM6XVRxvHzkZiwl3ddWCEPBa23T76MuWSwAJdMGJnmQqM0VeY9kFszsrBEFrQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/index.js"></script>
+  </body>
 </html>
